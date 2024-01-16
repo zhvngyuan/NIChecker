@@ -1,0 +1,6 @@
+true violation int test_global_var1 rwr
+true violation int test_global_var1 wwr
+true violation int test_global_var2 wrw
+true violation int test_global_var3 rww
+
+

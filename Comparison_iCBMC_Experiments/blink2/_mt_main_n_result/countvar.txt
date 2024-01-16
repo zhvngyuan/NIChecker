@@ -1,0 +1,3 @@
+1803 variables  3801 clauses
+1803 variables  368 clauses
+1803 variables  0 clauses

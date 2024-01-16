@@ -1,0 +1,4 @@
+int timerCount wrw
+int timerCount wwr
+int timerCount rwr
+int timerCount rww

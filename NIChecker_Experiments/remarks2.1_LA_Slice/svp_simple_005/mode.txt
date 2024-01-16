@@ -1,0 +1,1 @@
+int svp_simple_005_001_global_var wrw

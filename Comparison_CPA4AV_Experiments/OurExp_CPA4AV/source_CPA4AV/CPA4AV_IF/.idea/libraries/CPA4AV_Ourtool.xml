@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="CPA4AV-Ourtool">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/CPA4AV+F.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/cpachecker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/CPA4AV+IF.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/CPA4AV+I.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/Naive+IPS.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

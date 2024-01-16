@@ -1,0 +1,23 @@
+2023-09-08 20:10:12:567	INFO	CPAMain.detectFrontendLanguageIfNecessary	Language C detected and set for analysis
+
+2023-09-08 20:10:12:586	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 300s
+
+2023-09-08 20:10:12:649	INFO	CPAchecker.run	CPAchecker 2.0 / myAnalysis-concurrent-interrupt-benchmark-racebench (OpenJDK 64-Bit Server VM 11.0.20.1) started
+
+2023-09-08 20:10:12:671	INFO	CPAchecker.parse	Parsing CFA from file(s) "../Racebench-2.1/svp_simple_003_001.i"
+
+2023-09-08 20:10:13:374	INFO	EdgeInfo.<init>	Building Constrained Dependency Graph ...
+
+2023-09-08 20:10:13:574	WARNING	FormulaManagerView.<init>	Using unsound approximation of ints with unbounded integers and floats with rationals for encoding program semantics.
+
+2023-09-08 20:10:13:875	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ cpa.threadingintp.maxInterruptLevel
+ cpa.por.pcdpor.depComputationStateType
+ cpa.locations.useIncClonedFunc
+ heap 
+
+
+2023-09-08 20:10:13:876	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2023-09-08 20:10:16:237	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

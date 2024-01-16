@@ -1,0 +1,7 @@
+digraph svp_simple_022_001_func_4 {
+39 [shape="circle" label="N39\n3"]
+40 [shape="circle" label="N40\n2"]
+40 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">40</td><td align="left">svp_simple_022_001_global_var3 = svp_simple_022_001_global_var1;</td></tr><tr><td align="right">41</td><td align="left">default return</td></tr></table>>]
+40 -> 38[label=""]
+39 -> 40 [label="Function start dummy edge" fontname="Courier New"]
+}

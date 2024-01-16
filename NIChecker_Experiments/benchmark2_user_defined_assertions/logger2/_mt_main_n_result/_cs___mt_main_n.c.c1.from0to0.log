@@ -1,0 +1,34 @@
+CBMC version 5.6 64-bit x86_64 linux
+Parsing /home/dell/zyworkspace/nichecker/Experiment/icbmc/logger2/_mt_main_n_result/_cs___mt_main_n.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking _cs___mt_main_n
+file /home/dell/zyworkspace/nichecker/Experiment/icbmc/logger2/_mt_main_n_result/_cs___mt_main_n.c line 204 function task_measure1_isr_0: function `assert' is not declared
+file /home/dell/zyworkspace/nichecker/Experiment/icbmc/logger2/_mt_main_n_result/_cs___mt_main_n.c line 290 function task_communicate_isr_0: function `rand' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+**** WARNING: no body for function rand
+size of program expression: 862 steps
+simple slicing removed 236 assignments
+Generated 4 VCC(s), 4 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+2783 variables, 7480 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 0.013s
+
+** Results:
+[task_measure1_isr_0.assertion.1] assertion 0: SUCCESS
+[task_measure2_isr_0.assertion.1] assertion 0: SUCCESS
+[task_communicate_isr_0.assertion.1] assertion 0: SUCCESS
+
+** 0 of 3 failed (1 iteration)
+VERIFICATION SUCCESSFUL

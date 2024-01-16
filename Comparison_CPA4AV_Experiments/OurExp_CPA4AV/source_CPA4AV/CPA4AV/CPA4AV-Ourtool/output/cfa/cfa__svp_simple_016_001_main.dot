@@ -1,0 +1,14 @@
+digraph svp_simple_016_001_main {
+1 [shape="circle" label="N1\n15"]
+25 [shape="circle" label="N25\n14"]
+2 [shape="circle" label="N2\n5"]
+3 [shape="circle" label="N3\n4"]
+25 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">25</td><td align="left">void idlerun();</td></tr><tr><td align="right">26</td><td align="left">void enable_isr(int);</td></tr><tr><td align="right">27</td><td align="left">void disable_isr(int);</td></tr><tr><td align="right">28</td><td align="left">int rand();</td></tr><tr><td align="right">29</td><td align="left">void init();</td></tr><tr><td align="right">30</td><td align="left">volatile int svp_simple_016_001_global_var1 = 0;</td></tr><tr><td align="right">31</td><td align="left">void svp_simple_016_001_main();</td></tr><tr><td align="right">32</td><td align="left">void svp_simple_001_001_isr_1();</td></tr><tr><td align="right">33</td><td align="left">Function start dummy edge</td></tr></table>>]
+25 -> 2[label=""]
+3 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">3</td><td align="left">int reader1;</td></tr><tr><td align="right">4</td><td align="left">svp_simple_016_001_global_var1 = 1;</td></tr><tr><td align="right">5</td><td align="left">reader1 = (svp_simple_016_001_global_var1 + svp_simple_016_001_global_var1) + svp_simple_016_001_global_var1;</td></tr><tr><td align="right">6</td><td align="left">default return</td></tr></table>>]
+3 -> 0[label=""]
+1 -> 25 [label="INIT GLOBAL VARS" fontname="Courier New"]
+100002 [shape="component" label="init"]
+2 -> 100002 [label="init();" fontname="Courier New"]
+100002 -> 3 [label="" fontname="Courier New"]
+}

@@ -1,0 +1,16 @@
+digraph svp_simple_022_001_func_3 {
+31 [shape="circle" label="N31\n7"]
+32 [shape="diamond" label="N32\n6"]
+34 [shape="circle" label="N34\n3"]
+35 [shape="circle" label="N35\n5"]
+33 [shape="circle" label="N33\n1"]
+30 [shape="circle" label="N30\n0"]
+35 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">35</td><td align="left">svp_simple_022_001_global_var1 = 0;</td></tr><tr><td align="right">37</td><td align="left"></td></tr></table>>]
+35 -> 33[label=""]
+34 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">34</td><td align="left">svp_simple_022_001_global_var1 = 12;</td></tr><tr><td align="right">36</td><td align="left"></td></tr></table>>]
+34 -> 33[label=""]
+31 -> 32 [label="Function start dummy edge" fontname="Courier New"]
+32 -> 34 [label="[svp_simple_022_001_global_var1 >= 12]" fontname="Courier New"]
+32 -> 35 [label="[!(svp_simple_022_001_global_var1 >= 12)]" fontname="Courier New"]
+33 -> 30 [label="default return" fontname="Courier New"]
+}

@@ -1,0 +1,75 @@
+void * svp_simple_006_001_isr_1( void * arg ) {
+    int reader2 ; 
+    {
+        int i = 0 ; 
+    }
+
+    svp_simple_006_001_global_var1 = 1; 
+    __exit_svp_simple_006_001_isr_1 : 
+    ; 
+    pthread_exit ( 0 ); 
+}
+void * main_task( void * arg ) {
+    int reader1 ; 
+    int reader2 ; 
+    int reader3 ; 
+    {
+        int i ; 
+        for ( i = 0 ; i < 5 ; i ++ ) {
+            {
+                int j ; 
+                for ( j = 0 ; j < 5 ; j ++ ) {
+                    if( i == j ){
+                        if( i == 0 ){
+                            reader1 = svp_simple_006_001_global_var1; 
+                        }
+                        else {
+                            if( i == 4 ){
+                                reader2 = svp_simple_006_001_global_var1; 
+                            }
+                            else {
+                                if( i == 6 ){
+                                    reader2 = svp_simple_006_001_global_var1; 
+                                }
+                                
+                            }
+
+                        }
+
+                    }
+                    
+                }
+ 
+            }
+
+        }
+ 
+    }
+
+    {
+        int i ; 
+        for ( i = 0 ; i < 5 ; i ++ ) {
+            {
+                int j ; 
+                for ( j = 0 ; j < 5 ; j ++ ) {
+                }
+ 
+            }
+
+        }
+ 
+    }
+
+    __exit_main_task : 
+    ; 
+    pthread_exit ( 0 ); 
+}
+int main(  ) {
+    pthread_t t0 ; 
+    pthread_t t1 ; 
+    pthread_create ( & t0 , 0 , main_task , 0 ); 
+    pthread_create ( & t1 , 0 , svp_simple_006_001_isr_1 , 0 ); 
+    __exit_main : 
+    ; 
+    pthread_exit ( 0 ); 
+}

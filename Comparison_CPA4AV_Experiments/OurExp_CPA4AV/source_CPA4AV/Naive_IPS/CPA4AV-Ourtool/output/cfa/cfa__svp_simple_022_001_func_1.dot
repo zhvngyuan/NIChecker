@@ -1,0 +1,11 @@
+digraph svp_simple_022_001_func_1 {
+23 [shape="circle" label="N23\n3"]
+24 [shape="circle" label="N24\n2"]
+25 [shape="circle" label="N25\n1"]
+22 [shape="circle" label="N22\n0"]
+23 -> 24 [label="Function start dummy edge" fontname="Courier New"]
+100005 [shape="component" label="svp_simple_022_001_func_3"]
+24 -> 100005 [label="svp_simple_022_001_func_3();" fontname="Courier New"]
+100005 -> 25 [label="" fontname="Courier New"]
+25 -> 22 [label="default return" fontname="Courier New"]
+}

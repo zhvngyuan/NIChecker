@@ -1,0 +1,350 @@
+CBMC version 5.6 64-bit x86_64 linux
+Parsing /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking _cs_test_global_var2_rwr_mt_main
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 631 function main_task_0: function `disable_isr' is not declared
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 666 function main_task_0: function `enable_isr' is not declared
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 801 function closer2_isr_0: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+**** WARNING: no body for function disable_isr
+**** WARNING: no body for function enable_isr
+size of program expression: 1763 steps
+simple slicing removed 477 assignments
+Generated 3 VCC(s), 2 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+4466 variables, 10348 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+4466 variables, 0 clauses
+SAT checker inconsistent: instance is UNSATISFIABLE
+Runtime decision procedure: 0.073s
+
+** Results:
+[closer2_isr_0.assertion.1] assertion rwr_r1 == rwr_tmp3: SUCCESS
+[closer2_isr_0.assertion.2] assertion rwr_r2 == rwr_tmp3: FAILURE
+
+Trace for closer2_isr_0.assertion.2:
+
+State 107 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 926 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r0=3 (011)
+
+State 109 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 930 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (0001)
+
+State 110 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 932 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=3 (011)
+
+State 115 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 938 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 120 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 633 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[2l]=1 (1)
+
+State 121 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 636 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[7l]=1 (1)
+
+State 122 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 639 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[5l]=1 (1)
+
+State 123 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 642 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[4l]=1 (1)
+
+State 124 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 645 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[3l]=1 (1)
+
+State 125 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 648 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[6l]=1 (1)
+
+State 126 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 651 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[0l]=1 (1)
+
+State 127 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 656 function main_task_0 thread 0
+----------------------------------------------------
+  test_global_condition3=1 (00000000000000000000000000000001)
+
+State 129 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 661 function main_task_0 thread 0
+----------------------------------------------------
+  tco_expect_close=0 (00000000)
+
+State 134 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 668 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[2l]=0 (0)
+
+State 135 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 671 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[7l]=0 (0)
+
+State 136 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 674 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[5l]=0 (0)
+
+State 137 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 677 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[4l]=0 (0)
+
+State 138 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 680 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[3l]=0 (0)
+
+State 139 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 683 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[6l]=0 (0)
+
+State 140 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 686 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[0l]=0 (0)
+
+State 144 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 708 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 149 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 940 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=3 (011)
+
+State 150 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 946 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r0=0 (0)
+
+State 172 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 951 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (0010)
+
+State 173 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 953 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=0 (000)
+
+State 178 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 959 function main thread 0
+----------------------------------------------------
+  __cs_param_closer1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 182 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 517 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 187 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 961 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=0 (000)
+
+State 188 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 967 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t3_r0=1 (01)
+
+State 210 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 972 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=3 (0011)
+
+State 211 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 974 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[3l]=1 (001)
+
+State 216 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 980 function main thread 0
+----------------------------------------------------
+  __cs_param_closer2_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 218 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 724 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr___cs_tmp_if_cond_4=TRUE (00000001)
+
+State 220 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 732 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr___cs_tmp_if_cond_5=TRUE (00000001)
+
+State 222 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 753 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr_l=0 (00000000000000000000000000000000)
+
+State 223 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 775 function closer2_isr_0 thread 0
+----------------------------------------------------
+  tco_expect_close='*' (00101010)
+
+State 224 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 779 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr___cs_tmp_if_cond_6=TRUE (00000001)
+
+State 226 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 788 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr_reader1=0 (00000000000000000000000000000000)
+
+State 227 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 791 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr_reader2=0 (00000000000000000000000000000000)
+
+State 228 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 797 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr_reader3=0 (00000000000000000000000000000000)
+
+State 229 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 799 function closer2_isr_0 thread 0
+----------------------------------------------------
+  rwr_r1=0 (00000000000000000000000000000000)
+
+State 231 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 803 function closer2_isr_0 thread 0
+----------------------------------------------------
+  rwr_tmp3_num=1 (00000000000000000000000000000001)
+
+State 232 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 804 function closer2_isr_0 thread 0
+----------------------------------------------------
+  rwr_tmp3=0 (00000000000000000000000000000000)
+
+State 237 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 838 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 242 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 982 function main thread 0
+----------------------------------------------------
+  __cs_pc[3l]=1 (001)
+
+State 243 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 988 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t4_r0=1 (1)
+
+State 254 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1009 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t5_r0=0 (0)
+
+State 261 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1014 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=5 (0101)
+
+State 262 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1016 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[5l]=0 (000)
+
+State 267 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1022 function main thread 0
+----------------------------------------------------
+  __cs_param_writer1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 271 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 439 function writer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 276 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1024 function main thread 0
+----------------------------------------------------
+  __cs_pc[5l]=0 (000)
+
+State 277 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1030 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t6_r0=1 (1)
+
+State 279 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1035 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=6 (0110)
+
+State 280 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1037 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[6l]=1 (001)
+
+State 285 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1043 function main thread 0
+----------------------------------------------------
+  __cs_param_writer2_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 287 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 533 function writer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_writer2_isr___cs_tmp_if_cond_0=FALSE (00000000)
+
+State 289 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 578 function writer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_writer2_isr_l=0 (00000000000000000000000000000000)
+
+State 290 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 602 function writer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_writer2_isr___cs_tmp_if_cond_3=TRUE (00000001)
+
+State 292 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 607 function writer2_isr_0 thread 0
+----------------------------------------------------
+  test_global_var2=34 (00000000000000000000000000100010)
+
+State 296 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 622 function writer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 301 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1045 function main thread 0
+----------------------------------------------------
+  __cs_pc[6l]=1 (001)
+
+State 302 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1051 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t7_r0=0 (0)
+
+State 304 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1056 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=7 (0111)
+
+State 305 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1058 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[7l]=0 (000)
+
+State 310 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1064 function main thread 0
+----------------------------------------------------
+  __cs_param_writer3_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 314 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 914 function writer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 319 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1066 function main thread 0
+----------------------------------------------------
+  __cs_pc[7l]=0 (000)
+
+State 320 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1076 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r1=6 (110)
+
+State 331 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1097 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r1=0 (0)
+
+State 337 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1118 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t3_r1=3 (11)
+
+State 358 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1123 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=3 (0011)
+
+State 359 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1125 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[3l]=3 (011)
+
+State 364 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 1131 function main thread 0
+----------------------------------------------------
+  __cs_param_closer2_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 367 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 809 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr_reader4=34 (00000000000000000000000000100010)
+
+State 368 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 811 function closer2_isr_0 thread 0
+----------------------------------------------------
+  rwr_r2=34 (00000000000000000000000000100010)
+
+Violated property:
+  file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i8xx_tco_3/_mt_main_result/_cs_test_global_var2_rwr_mt_main.c line 813 function closer2_isr_0
+  assertion rwr_r2 == rwr_tmp3
+  rwr_r2 == rwr_tmp3
+
+
+** 1 of 2 failed (2 iterations)
+VERIFICATION FAILED

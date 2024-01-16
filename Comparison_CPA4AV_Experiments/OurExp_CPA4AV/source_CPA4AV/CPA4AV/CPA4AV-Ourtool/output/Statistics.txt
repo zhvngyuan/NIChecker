@@ -1,0 +1,113 @@
+
+BDDCPA statistics
+-----------------
+Number of boolean vars:           1 (of 2)
+Number of intEqual vars:          0 (of 0)
+Number of intAdd vars:            2 (of 4)
+Number of all vars:               3
+Number of intBool partitions:     2
+Number of intEq partitions:       0
+Number of intAdd partitions:      2
+Number of all partitions:         4
+Number of named predicates:          640
+Number of BDD nodes:                               10395
+Size of BDD node table:                            62921
+Size of BDD cache:                                 6299
+Size of BDD node cleanup queue:                    0.00 (sum: 0, count: 1848, min: 0, max: 0)
+Time for BDD node cleanup:                             0.001s
+Time for BDD garbage collection:                       0.000s (in 0 runs)
+
+DataAccessCPA statistics
+------------------------
+
+Constrained Dependency Graph statistics
+---------------------------------------
+Time for building the nodes of conditional dependence graph:     0.036s
+Time for building conditional dependence graph:        0.181s
+  Number of dependent node:                              12 (count: 1, min: 12, max: 12, avg: 12.00)
+  Number of dependent node pairs:                        33
+  Number of un-conditional dependent node pairs:         33
+  Number of block:                                       12
+  Size of block:                                         12 (sum: 12, min: 1, max: 1, avg: 1.00)
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            46
+Max size of waitlist:            3
+Average size of waitlist:        1
+ThreadingSortedWaitlist:                           15.00 (sum: 15, count: 1, min: 15, max: 15)
+CallstackSortedWaitlist:                           0.48 (sum: 15, count: 31, min: 0, max: 15)
+Number of computed successors:   45
+Max successors for one state:    3
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.074s (Max:     0.074s)
+  Time for choose from waitlist:      0.001s
+  Time for precision adjustment:      0.001s
+  Time for transfer relation:         0.066s
+  Time for stop operator:             0.001s
+  Time for adding to reached set:     0.003s
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.714
+  Visited lines:          15
+  Total lines:            22
+  Line coverage:          0.682
+  Visited conditions:     2
+  Total conditions:       6
+  Condition coverage:     0.333
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:                       61
+Number of CFA edges (per node):                          60 (count: 61, min: 0, max: 2, avg: 0.98)
+Number of relevant variables:                      3
+Number of functions:                               7
+Number of loops (and loop nodes):                         1 (sum: 3, min: 3, max: 3, avg: 3.00)
+Size of reached set:             46
+  Number of partitions:          43
+    Avg size of partitions:      1
+    Max size of partitions:      3 (with key [{svp_simple_030_001_main=N6 (before line 33) Function svp_simple_030_001_main called from node N1, stack depth 1 [2ab5afc7], stack [svp_simple_030_001_main] @@ -2147483648 @@ 0}])
+  Number of target states:       0
+
+Time for analysis setup:          1.096s
+  Time for loading CPAs:          0.177s
+  Time for loading parser:        0.158s
+  Time for CFA construction:      0.485s
+    Time for parsing file(s):     0.261s
+    Time for AST to CFA:          0.105s
+    Time for CFA sanity check:    0.024s
+    Time for post-processing:     0.071s
+    Time for CFA export:          0.459s
+      Time for function pointers resolving:            0.002s
+        Function calls via function pointers:             0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer calls:              0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Function calls with function pointer arguments:        0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer arguments:          0 (count: 1, min: 0, max: 0, avg: 0.00)
+      Time for classifying variables:                  0.037s
+        Time for collecting variables:                 0.013s
+        Time for solving dependencies:                 0.000s
+        Time for building hierarchy:                   0.000s
+        Time for building classification:              0.023s
+        Time for exporting data:                       0.001s
+Time for Analysis:                0.086s
+CPU time for analysis:            0.780s
+Time for analyzing result:        0.001s
+Total time for CPAchecker:        1.184s
+Total CPU time for CPAchecker:    8.280s
+Time for statistics:              0.050s
+
+Time for Garbage Collector:       0.038s (in 2 runs)
+Garbage Collector(s) used:    G1 Old Generation, G1 Young Generation
+Used heap memory:                 57MB (    54 MiB) max;     30MB (    29 MiB) avg;     83MB (    79 MiB) peak
+Used non-heap memory:             39MB (    37 MiB) max;     25MB (    24 MiB) avg;     41MB (    39 MiB) peak
+Used in G1 Old Gen pool:          12MB (    11 MiB) max;      4MB (     4 MiB) avg;     12MB (    11 MiB) peak
+Allocated heap memory:          1258MB (  1200 MiB) max;   1258MB (  1200 MiB) avg
+Allocated non-heap memory:        42MB (    40 MiB) max;     28MB (    27 MiB) avg
+Total process virtual memory:   6894MB (  6575 MiB) max;   5898MB (  5625 MiB) avg
+
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".

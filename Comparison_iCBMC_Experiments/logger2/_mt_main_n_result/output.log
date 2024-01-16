@@ -1,0 +1,15 @@
+2023-10-24 08:49:31
+SVPCheck: False	LoopAbstraction: False	LabelReduction: False	Slice: False	
+
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.216
+[92mSAFE[0m, counterexample: 0, time: 1.857 s, memory: 30.57 MB
+--------------------------Run end---------------------------------
+cbmcTimeSum: 0.216
+modulesTimeSum: 1.857

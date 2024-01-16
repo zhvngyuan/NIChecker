@@ -1,0 +1,3 @@
+6448 variables  29127 clauses
+5293 variables  23316 clauses
+4804 variables  20805 clauses

@@ -1,0 +1,4 @@
+int svp_simple_011_001_global_var1 wrw
+int svp_simple_011_001_global_var2 wrw
+int svp_simple_011_001_global_var3 wrw
+int* svp_simple_011_001_u wrw

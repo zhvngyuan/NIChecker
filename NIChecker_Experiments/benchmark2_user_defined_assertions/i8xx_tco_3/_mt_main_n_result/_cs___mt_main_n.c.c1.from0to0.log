@@ -1,0 +1,331 @@
+CBMC version 5.6 64-bit x86_64 linux
+Parsing /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking _cs___mt_main_n
+file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 311 function closer1_isr_0: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+size of program expression: 1761 steps
+simple slicing removed 301 assignments
+Generated 6 VCC(s), 6 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+4388 variables, 11617 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+4388 variables, 1489 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 0.032s
+
+** Results:
+[closer1_isr_0.assertion.1] assertion 0: FAILURE
+[closer2_isr_0.assertion.1] assertion 0: SUCCESS
+[closer3_isr_0.assertion.1] assertion 0: SUCCESS
+
+Trace for closer1_isr_0.assertion.1:
+
+State 83 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1051 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r0=1 (1)
+
+State 85 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1055 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (0001)
+
+State 86 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1057 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=1 (0001)
+
+State 91 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1063 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 93 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1024 function main_task_0 thread 0
+----------------------------------------------------
+  tco_expect_close=0 (00000000)
+
+State 97 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1039 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 102 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1065 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=1 (0001)
+
+State 103 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1071 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r0=7 (0111)
+
+State 125 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1076 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (0010)
+
+State 126 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1078 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=7 (0111)
+
+State 131 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1084 function main thread 0
+----------------------------------------------------
+  __cs_param_closer1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 133 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 203 function closer1_isr_0 thread 0
+----------------------------------------------------
+  tco_write_buf='V' (01010110)
+
+State 134 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 211 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer1_isr___cs_tmp_if_cond_2=TRUE (00000001)
+
+State 137 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 221 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer1_isr___cs_tmp_if_cond_3=TRUE (00000001)
+
+State 140 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 229 function closer1_isr_0 thread 0
+----------------------------------------------------
+  tco_expect_close=0 (00000000)
+
+State 142 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 235 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer1_isr___cs_tmp_if_cond_4=TRUE (00000001)
+
+State 145 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 243 function closer1_isr_0 thread 0
+----------------------------------------------------
+  tco_expect_close='*' (00101010)
+
+State 150 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 269 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer1_isr_l=0 (00000000000000000000000000000000)
+
+State 151 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 273 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer1_isr_l=1 (00000000000000000000000000000001)
+
+State 153 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 295 function closer1_isr_0 thread 0
+----------------------------------------------------
+  tco_expect_close='*' (00101010)
+
+State 160 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 361 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 165 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1086 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=7 (0111)
+
+State 166 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1092 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t3_r0=0 (0000)
+
+State 183 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1097 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=3 (0011)
+
+State 184 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1099 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[3l]=0 (0000)
+
+State 189 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1105 function main thread 0
+----------------------------------------------------
+  __cs_param_closer2_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 203 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 529 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 208 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1107 function main thread 0
+----------------------------------------------------
+  __cs_pc[3l]=0 (0000)
+
+State 209 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1113 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t4_r0=11 (1011)
+
+State 226 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1118 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=4 (0100)
+
+State 227 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1120 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[4l]=11 (1011)
+
+State 232 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1126 function main thread 0
+----------------------------------------------------
+  __cs_param_closer3_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 234 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 539 function closer3_isr_0 thread 0
+----------------------------------------------------
+  tco_write_buf='V' (01010110)
+
+State 235 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 547 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer3_isr___cs_tmp_if_cond_10=TRUE (00000001)
+
+State 238 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 557 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer3_isr___cs_tmp_if_cond_11=TRUE (00000001)
+
+State 241 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 565 function closer3_isr_0 thread 0
+----------------------------------------------------
+  tco_expect_close=0 (00000000)
+
+State 243 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 571 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer3_isr___cs_tmp_if_cond_12=TRUE (00000001)
+
+State 246 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 579 function closer3_isr_0 thread 0
+----------------------------------------------------
+  tco_expect_close='*' (00101010)
+
+State 251 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 605 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer3_isr_l=0 (00000000000000000000000000000000)
+
+State 252 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 609 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer3_isr_l=1 (00000000000000000000000000000001)
+
+State 254 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 631 function closer3_isr_0 thread 0
+----------------------------------------------------
+  tco_expect_close='*' (00101010)
+
+State 256 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 641 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer3_isr___cs_tmp_if_cond_13=FALSE (00000000)
+
+State 259 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 662 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer3_isr_v=0 (00000000000000000000000000000000)
+
+State 260 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 666 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer3_isr_v=0 (00000000000000000000000000000000)
+
+State 262 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 676 function closer3_isr_0 thread 0
+----------------------------------------------------
+  tco_expect_close=0 (00000000)
+
+State 264 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 686 function closer3_isr_0 thread 0
+----------------------------------------------------
+  cnt3=1 (00000000000000000000000000000001)
+
+State 268 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 697 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 273 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1128 function main thread 0
+----------------------------------------------------
+  __cs_pc[4l]=11 (1011)
+
+State 274 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1134 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t5_r0=0 (000)
+
+State 281 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1139 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=5 (0101)
+
+State 282 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1141 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[5l]=0 (0000)
+
+State 287 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1147 function main thread 0
+----------------------------------------------------
+  __cs_param_writer1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 297 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 808 function writer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 302 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1149 function main thread 0
+----------------------------------------------------
+  __cs_pc[5l]=0 (0000)
+
+State 303 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1155 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t6_r0=0 (000)
+
+State 305 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1160 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=6 (0110)
+
+State 306 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1162 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[6l]=0 (0000)
+
+State 311 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1168 function main thread 0
+----------------------------------------------------
+  __cs_param_writer2_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 321 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 919 function writer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 326 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1170 function main thread 0
+----------------------------------------------------
+  __cs_pc[6l]=0 (0000)
+
+State 327 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1176 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t7_r0=0 (0)
+
+State 329 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1181 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=7 (0111)
+
+State 330 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1183 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[7l]=0 (0000)
+
+State 335 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1189 function main thread 0
+----------------------------------------------------
+  __cs_param_writer3_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 339 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1015 function writer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 344 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1191 function main thread 0
+----------------------------------------------------
+  __cs_pc[7l]=0 (0000)
+
+State 345 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1201 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r1=0 (0)
+
+State 351 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1222 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r1=9 (1001)
+
+State 372 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1227 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (0010)
+
+State 373 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1229 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=9 (1001)
+
+State 378 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 1235 function main thread 0
+----------------------------------------------------
+  __cs_param_closer1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 387 file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 305 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer1_isr___cs_tmp_if_cond_5=TRUE (00000001)
+
+Violated property:
+  file /home/dell/zyworkspace/nichecker/Experiment/icbmc/i8xx_tco_3/_mt_main_n_result/_cs___mt_main_n.c line 311 function closer1_isr_0
+  assertion 0
+  (_Bool)0
+
+
+** 1 of 3 failed (2 iterations)
+VERIFICATION FAILED

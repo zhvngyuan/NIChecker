@@ -1,0 +1,4 @@
+true violation: int test_global_var1 rwr
+false violation: int test_global_var2 rwr
+true violation: int test_global_array[9000] wwr
+

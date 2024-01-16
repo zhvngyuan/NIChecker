@@ -1,0 +1,454 @@
+CBMC version 5.6 64-bit x86_64 linux
+Parsing /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking _cs_test_global_var1_rwr_mt_main
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 346 function writer1_isr_0: function `assert' is not declared
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 554 function main_task_0: function `disable_isr' is not declared
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 585 function main_task_0: function `enable_isr' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+**** WARNING: no body for function disable_isr
+**** WARNING: no body for function enable_isr
+size of program expression: 1966 steps
+simple slicing removed 351 assignments
+Generated 3 VCC(s), 3 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+5555 variables, 13091 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+5555 variables, 0 clauses
+SAT checker inconsistent: instance is UNSATISFIABLE
+Runtime decision procedure: 0.077s
+
+** Results:
+[writer1_isr_0.assertion.1] assertion rwr_r1 == rwr_tmp6: SUCCESS
+[writer1_isr_0.assertion.2] assertion rwr_r2 == rwr_tmp6: FAILURE
+
+Trace for writer1_isr_0.assertion.2:
+
+State 104 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 827 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r0=1 (01)
+
+State 106 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 831 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (0001)
+
+State 107 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 833 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=1 (01)
+
+State 112 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 839 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 117 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 556 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[5l]=1 (1)
+
+State 118 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 559 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[2l]=1 (1)
+
+State 119 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 562 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[8l]=1 (1)
+
+State 120 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 565 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[6l]=1 (1)
+
+State 121 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 568 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[4l]=1 (1)
+
+State 122 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 571 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[9l]=1 (1)
+
+State 123 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 574 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[3l]=1 (1)
+
+State 124 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 577 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[7l]=1 (1)
+
+State 125 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 580 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[0l]=1 (1)
+
+State 129 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 587 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[5l]=0 (0)
+
+State 130 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 590 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[2l]=0 (0)
+
+State 131 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 593 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[8l]=0 (0)
+
+State 132 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 596 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[6l]=0 (0)
+
+State 133 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 599 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[4l]=0 (0)
+
+State 134 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 602 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[9l]=0 (0)
+
+State 135 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 605 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[3l]=0 (0)
+
+State 136 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 608 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[7l]=0 (0)
+
+State 137 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 611 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[0l]=0 (0)
+
+State 141 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 633 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 146 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 841 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=1 (01)
+
+State 147 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 847 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r0=0 (0)
+
+State 149 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 852 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (0010)
+
+State 150 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 854 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=0 (00)
+
+State 155 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 860 function main thread 0
+----------------------------------------------------
+  __cs_param_closer1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 159 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 447 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 164 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 862 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=0 (00)
+
+State 165 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 868 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t3_r0=0 (0)
+
+State 177 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 873 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=3 (0011)
+
+State 178 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 875 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[3l]=0 (00)
+
+State 183 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 881 function main thread 0
+----------------------------------------------------
+  __cs_param_closer2_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 187 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 701 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 192 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 883 function main thread 0
+----------------------------------------------------
+  __cs_pc[3l]=0 (00)
+
+State 193 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 889 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t4_r0=0 (0)
+
+State 220 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 894 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=4 (0100)
+
+State 221 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 896 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[4l]=0 (00)
+
+State 226 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 902 function main thread 0
+----------------------------------------------------
+  __cs_param_closer3_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 230 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 303 function closer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 235 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 904 function main thread 0
+----------------------------------------------------
+  __cs_pc[4l]=0 (00)
+
+State 236 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 910 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t5_r0=0 (0)
+
+State 268 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 915 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=5 (0101)
+
+State 269 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 917 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[5l]=0 (00)
+
+State 274 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 923 function main thread 0
+----------------------------------------------------
+  __cs_param_closer4_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 278 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 766 function closer4_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 283 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 925 function main thread 0
+----------------------------------------------------
+  __cs_pc[5l]=0 (00)
+
+State 284 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 931 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t6_r0=1 (01)
+
+State 311 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 936 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=6 (0110)
+
+State 312 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 938 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[6l]=1 (01)
+
+State 317 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 944 function main thread 0
+----------------------------------------------------
+  __cs_param_writer1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 319 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 315 function writer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_writer1_isr___cs_tmp_if_cond_14=FALSE (00000000)
+
+State 321 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 340 function writer1_isr_0 thread 0
+----------------------------------------------------
+  test_global_var1=0 (00000000000000000000000000000000)
+
+State 322 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 342 function writer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_writer1_isr_reader1=0 (00000000000000000000000000000000)
+
+State 323 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 344 function writer1_isr_0 thread 0
+----------------------------------------------------
+  rwr_r1=0 (00000000000000000000000000000000)
+
+State 325 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 348 function writer1_isr_0 thread 0
+----------------------------------------------------
+  rwr_tmp6_num=1 (00000000000000000000000000000001)
+
+State 326 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 349 function writer1_isr_0 thread 0
+----------------------------------------------------
+  rwr_tmp6=0 (00000000000000000000000000000000)
+
+State 331 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 381 function writer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 336 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 946 function main thread 0
+----------------------------------------------------
+  __cs_pc[6l]=1 (01)
+
+State 337 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 952 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t7_r0=0 (0)
+
+State 353 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 973 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t8_r0=1 (1)
+
+State 365 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 978 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=8 (1000)
+
+State 366 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 980 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[8l]=1 (01)
+
+State 371 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 986 function main thread 0
+----------------------------------------------------
+  __cs_param_writer3_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 373 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 778 function writer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_writer3_isr___cs_tmp_if_cond_18=FALSE (00000000)
+
+State 378 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 815 function writer3_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 383 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 988 function main thread 0
+----------------------------------------------------
+  __cs_pc[8l]=1 (01)
+
+State 384 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 994 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t9_r0=1 (1)
+
+State 386 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 999 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=9 (1001)
+
+State 387 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1001 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[9l]=1 (01)
+
+State 392 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1007 function main thread 0
+----------------------------------------------------
+  __cs_param_writer4_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 394 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 508 function writer4_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_writer4_isr___cs_tmp_if_cond_16=FALSE (00000000)
+
+State 399 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 545 function writer4_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 404 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1009 function main thread 0
+----------------------------------------------------
+  __cs_pc[9l]=1 (01)
+
+State 405 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1019 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r1=0 (00)
+
+State 426 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1040 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r1=1 (1)
+
+State 428 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1045 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (0010)
+
+State 429 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1047 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=1 (01)
+
+State 434 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1053 function main thread 0
+----------------------------------------------------
+  __cs_param_closer1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 436 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 390 function closer1_isr_0 thread 0
+----------------------------------------------------
+  test_global_var1=1 (00000000000000000000000000000001)
+
+State 437 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 394 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer1_isr___cs_tmp_if_cond_11=FALSE (00000000)
+
+State 439 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 418 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer1_isr___cs_tmp_if_cond_13=TRUE (00000001)
+
+State 444 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 447 function closer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 449 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1055 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=1 (01)
+
+State 450 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1061 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t3_r1=1 (1)
+
+State 460 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1066 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=3 (0011)
+
+State 461 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1068 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[3l]=1 (01)
+
+State 466 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1074 function main thread 0
+----------------------------------------------------
+  __cs_param_closer2_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 468 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 645 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr___cs_tmp_if_cond_5=FALSE (00000000)
+
+State 470 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 669 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr___cs_tmp_if_cond_7=TRUE (00000001)
+
+State 472 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 684 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_closer2_isr_reader=0 (00000000000000000000000000000000)
+
+State 476 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 701 function closer2_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 481 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1076 function main thread 0
+----------------------------------------------------
+  __cs_pc[3l]=1 (01)
+
+State 482 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1082 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t4_r1=0 (0)
+
+State 492 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1103 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t5_r1=0 (0)
+
+State 507 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1124 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t6_r1=2 (10)
+
+State 531 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1129 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=6 (0110)
+
+State 532 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1131 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[6l]=2 (10)
+
+State 537 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 1137 function main thread 0
+----------------------------------------------------
+  __cs_param_writer1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 540 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 354 function writer1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_writer1_isr_reader2=1 (00000000000000000000000000000001)
+
+State 541 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 356 function writer1_isr_0 thread 0
+----------------------------------------------------
+  rwr_r2=1 (00000000000000000000000000000001)
+
+Violated property:
+  file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/wdt_pci_3/_mt_main_result/_cs_test_global_var1_rwr_mt_main.c line 358 function writer1_isr_0
+  assertion rwr_r2 == rwr_tmp6
+  rwr_r2 == rwr_tmp6
+
+
+** 1 of 2 failed (2 iterations)
+VERIFICATION FAILED

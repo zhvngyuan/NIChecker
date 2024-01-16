@@ -1,0 +1,16 @@
+digraph svp_simple_023_001_func_1 {
+11 [shape="circle" label="N11\n6"]
+12 [shape="diamond" label="N12\n5"]
+15 [shape="diamond" label="N15\n4"]
+13 [shape="circle" label="N13\n1"]
+10 [shape="circle" label="N10\n0"]
+14 [shape="circle" label="N14\n3"]
+14 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">14</td><td align="left">svp_simple_023_001_global_var = svp_simple_023_001_global_var + 1;</td></tr><tr><td align="right">16</td><td align="left"></td></tr></table>>]
+14 -> 13[label=""]
+11 -> 12 [label="Function start dummy edge" fontname="Courier New"]
+12 -> 15 [label="[var > 0]" fontname="Courier New"]
+12 -> 13 [label="[!(var > 0)]" fontname="Courier New"]
+13 -> 10 [label="default return" fontname="Courier New"]
+15 -> 14 [label="[var < 12]" fontname="Courier New"]
+15 -> 13 [label="[!(var < 12)]" fontname="Courier New"]
+}

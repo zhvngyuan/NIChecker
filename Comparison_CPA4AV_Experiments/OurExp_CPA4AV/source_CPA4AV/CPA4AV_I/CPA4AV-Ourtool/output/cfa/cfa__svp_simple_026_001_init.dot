@@ -1,0 +1,13 @@
+digraph svp_simple_026_001_init {
+11 [shape="circle" label="N11\n4"]
+12 [shape="circle" label="N12\n3"]
+13 [shape="circle" label="N13\n2"]
+14 [shape="circle" label="N14\n1"]
+10 [shape="circle" label="N10\n0"]
+11 -> 12 [label="Function start dummy edge" fontname="Courier New"]
+100001 [shape="component" label="init"]
+13 -> 100001 [label="init();" fontname="Courier New"]
+100001 -> 14 [label="" fontname="Courier New"]
+12 -> 13 [label="svp_simple_026_001_gloable_var = rand();" fontname="Courier New"]
+14 -> 10 [label="default return" fontname="Courier New"]
+}

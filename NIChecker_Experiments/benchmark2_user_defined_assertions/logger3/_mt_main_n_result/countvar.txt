@@ -1,0 +1,3 @@
+6211 variables  18504 clauses
+6211 variables  3510 clauses
+6211 variables  3480 clauses

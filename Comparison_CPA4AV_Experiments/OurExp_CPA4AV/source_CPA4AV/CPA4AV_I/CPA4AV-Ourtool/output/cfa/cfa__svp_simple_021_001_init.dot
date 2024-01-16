@@ -1,0 +1,14 @@
+digraph svp_simple_021_001_init {
+23 [shape="circle" label="N23\n5"]
+24 [shape="circle" label="N24\n4"]
+26 [shape="circle" label="N26\n2"]
+27 [shape="circle" label="N27\n1"]
+22 [shape="circle" label="N22\n0"]
+24 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">24</td><td align="left">svp_simple_021_001_tc_block_rcvd_bytes_ch1 = __VERIFER_nondet_int();</td></tr><tr><td align="right">25</td><td align="left">svp_simple_021_001_tc_block_rcvd_bytes_ch2 = __VERIFER_nondet_int();</td></tr></table>>]
+24 -> 26[label=""]
+23 -> 24 [label="Function start dummy edge" fontname="Courier New"]
+100003 [shape="component" label="init"]
+26 -> 100003 [label="init();" fontname="Courier New"]
+100003 -> 27 [label="" fontname="Courier New"]
+27 -> 22 [label="default return" fontname="Courier New"]
+}

@@ -1,0 +1,4 @@
+320152 variables  1612421 clauses
+320137 variables  1612386 clauses
+320143 variables  1612400 clauses
+320140 variables  1612393 clauses

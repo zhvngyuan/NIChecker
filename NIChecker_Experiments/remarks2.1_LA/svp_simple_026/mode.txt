@@ -1,0 +1,2 @@
+int svp_simple_026_001_gloable_var rww
+int svp_simple_026_001_gloable_var wwr

@@ -1,0 +1,2 @@
+int svp_simple_002_001_global_array[9999] wwr
+

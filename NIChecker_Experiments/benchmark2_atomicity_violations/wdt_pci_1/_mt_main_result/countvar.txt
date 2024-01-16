@@ -1,0 +1,5 @@
+2211 variables  4354 clauses
+2665 variables  6109 clauses
+2665 variables  279 clauses
+3122 variables  7218 clauses
+3122 variables  464 clauses

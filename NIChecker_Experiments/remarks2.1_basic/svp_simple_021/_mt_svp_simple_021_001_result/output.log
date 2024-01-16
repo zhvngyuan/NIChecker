@@ -1,0 +1,38 @@
+2023-10-15 16:52:50
+SVPCheck: True	LoopAbstraction: False	LabelReduction: False	Slice: False	
+
+SVPCheck var: svp_simple_021_001_tc_block_rcvd_bytes_ch1	pattern: rww
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.251
+[91mUNSAFE[0m, counterexample: 1, time: 1.795 s, memory: 30.75 MB
+--------------------------Run end---------------------------------
+SVPCheck var: svp_simple_021_001_tc_block_rcvd_bytes_ch1	pattern: wwr
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.255
+[92mSAFE[0m, counterexample: 0, time: 1.790 s, memory: 30.91 MB
+--------------------------Run end---------------------------------
+SVPCheck var: svp_simple_021_001_tc_block_rcvd_bytes_ch1	pattern: rwr
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.267
+[91mUNSAFE[0m, counterexample: 1, time: 1.828 s, memory: 31.45 MB
+--------------------------Run end---------------------------------
+cbmcTimeSum: 0.773
+modulesTimeSum: 5.413

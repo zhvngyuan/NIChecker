@@ -1,0 +1,4 @@
+int svp_simple_017_001_global_var rwr
+int svp_simple_017_001_global_var rww
+int svp_simple_017_001_global_var wwr
+int svp_simple_017_001_local_array[50] rwr

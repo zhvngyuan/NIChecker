@@ -1,0 +1,14 @@
+digraph functioncalls {
+rankdir=LR;
+
+svp_simple_030_001_main [shape="box", color=blue];
+svp_simple_030_001_init [label="svp_simple_030_001_init", ];
+svp_simple_030_001_main -> svp_simple_030_001_init;
+disable_isr [label="disable_isr", shape="box", color=grey];
+svp_simple_030_001_main -> disable_isr;
+enable_isr [label="enable_isr", shape="box", color=grey];
+svp_simple_030_001_main -> enable_isr;
+init [label="init", ];
+svp_simple_030_001_init -> init;
+init -> enable_isr;
+}
