@@ -1,0 +1,4 @@
+3741 variables  8686 clauses
+4116 variables  10114 clauses
+4116 variables  854 clauses
+5623 variables  16838 clauses

@@ -1,0 +1,2 @@
+int svp_simple_016_001_global_var1 rwr
+int svp_simple_016_001_global_var1 wwr

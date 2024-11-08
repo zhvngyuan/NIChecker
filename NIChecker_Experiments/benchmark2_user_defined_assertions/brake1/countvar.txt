@@ -1,0 +1,5 @@
+14537 variables  57752 clauses
+14545 variables  57769 clauses
+14539 variables  57757 clauses
+14543 variables  57765 clauses
+14541 variables  57761 clauses

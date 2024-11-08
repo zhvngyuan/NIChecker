@@ -1,0 +1,2 @@
+18621 variables  87319 clauses
+18615 variables  87305 clauses

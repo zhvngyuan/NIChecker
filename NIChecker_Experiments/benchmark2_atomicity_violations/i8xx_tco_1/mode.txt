@@ -1,0 +1,4 @@
+int test_global_var1 rwr
+int test_global_var2 rwr
+int tco_expect_close wwr
+int test_global_array[9000] wwr

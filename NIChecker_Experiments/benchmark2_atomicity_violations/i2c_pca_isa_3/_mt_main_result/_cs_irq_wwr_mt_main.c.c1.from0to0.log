@@ -1,0 +1,810 @@
+CBMC version 5.6 64-bit x86_64 linux
+Parsing /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking _cs_irq_wwr_mt_main
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 219 function req6_isr_0: function `assert' is not declared
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 394 function main_task_0: function `disable_isr' is not declared
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 425 function main_task_0: function `enable_isr' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+**** WARNING: no body for function disable_isr
+**** WARNING: no body for function enable_isr
+size of program expression: 2178 steps
+simple slicing removed 229 assignments
+Generated 4 VCC(s), 3 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+10450 variables, 27829 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+10450 variables, 2548 clauses
+SAT checker: instance is SATISFIABLE
+Runtime decision procedure: 0.156s
+
+** Results:
+[req6_isr_0.assertion.1] assertion wwr_r1 == wwr_w_tmp7: FAILURE
+[req1_isr_0.assertion.1] assertion wwr_r2 == wwr_w_tmp2: FAILURE
+
+Trace for req6_isr_0.assertion.1:
+
+State 86 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 764 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r0=2 (10)
+
+State 88 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 768 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (0001)
+
+State 89 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 770 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=2 (10)
+
+State 94 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 776 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 99 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 396 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[4l]=1 (1)
+
+State 100 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 399 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[7l]=1 (1)
+
+State 101 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 402 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[6l]=1 (1)
+
+State 102 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 405 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[5l]=1 (1)
+
+State 103 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 408 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[3l]=1 (1)
+
+State 104 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 411 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[9l]=1 (1)
+
+State 105 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 414 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[2l]=1 (1)
+
+State 106 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 417 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[8l]=1 (1)
+
+State 107 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 420 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[0l]=1 (1)
+
+State 111 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 427 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[4l]=0 (0)
+
+State 112 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 430 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[7l]=0 (0)
+
+State 113 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 433 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[6l]=0 (0)
+
+State 114 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 436 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[5l]=0 (0)
+
+State 115 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 439 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[3l]=0 (0)
+
+State 116 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 442 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[9l]=0 (0)
+
+State 117 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 445 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[2l]=0 (0)
+
+State 118 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 448 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[8l]=0 (0)
+
+State 119 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 451 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[0l]=0 (0)
+
+State 124 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 473 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 129 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 778 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=2 (10)
+
+State 130 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 784 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r0=0 (00)
+
+State 162 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 789 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (0010)
+
+State 163 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 791 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=0 (00)
+
+State 168 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 797 function main thread 0
+----------------------------------------------------
+  __cs_param_req1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 173 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 385 function req1_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 178 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 799 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=0 (00)
+
+State 179 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 805 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t3_r0=0 (00)
+
+State 211 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 810 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=3 (0011)
+
+State 212 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 812 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[3l]=0 (00)
+
+State 217 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 818 function main thread 0
+----------------------------------------------------
+  __cs_param_req2_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 222 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 277 function req2_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 227 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 820 function main thread 0
+----------------------------------------------------
+  __cs_pc[3l]=0 (00)
+
+State 228 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 826 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t4_r0=2 (10)
+
+State 250 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 831 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=4 (0100)
+
+State 251 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 833 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[4l]=2 (10)
+
+State 256 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 839 function main thread 0
+----------------------------------------------------
+  __cs_param_req3_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 258 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 709 function req3_isr_0 thread 0
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 259 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 711 function req3_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp4_num=1 (00000000000000000000000000000001)
+
+State 260 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 712 function req3_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp4=0 (00000000000000000000000000000000)
+
+State 262 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 729 function req3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_req3_isr___cs_tmp_if_cond_2=FALSE (00000000)
+
+State 267 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 752 function req3_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 272 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 841 function main thread 0
+----------------------------------------------------
+  __cs_pc[4l]=2 (10)
+
+State 273 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 847 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t5_r0=0 (00)
+
+State 294 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 852 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=5 (0101)
+
+State 295 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 854 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[5l]=0 (00)
+
+State 300 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 860 function main thread 0
+----------------------------------------------------
+  __cs_param_req4_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 305 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 313 function req4_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 310 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 862 function main thread 0
+----------------------------------------------------
+  __cs_pc[5l]=0 (00)
+
+State 311 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 868 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t6_r0=0 (00)
+
+State 318 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 873 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=6 (0110)
+
+State 319 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 875 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[6l]=0 (00)
+
+State 324 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 881 function main thread 0
+----------------------------------------------------
+  __cs_param_req5_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 329 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 700 function req5_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 334 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 883 function main thread 0
+----------------------------------------------------
+  __cs_pc[6l]=0 (00)
+
+State 335 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 889 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t7_r0=1 (01)
+
+State 356 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 894 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=7 (0111)
+
+State 357 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 896 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[7l]=1 (01)
+
+State 362 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 902 function main thread 0
+----------------------------------------------------
+  __cs_param_req6_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 364 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 205 function req6_isr_0 thread 0
+----------------------------------------------------
+  irq=-1 (11111111111111111111111111111111)
+
+State 365 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 207 function req6_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp7_num=1 (00000000000000000000000000000001)
+
+State 366 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 208 function req6_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp7=-1 (11111111111111111111111111111111)
+
+State 370 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 241 function req6_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 375 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 904 function main thread 0
+----------------------------------------------------
+  __cs_pc[7l]=1 (01)
+
+State 376 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 910 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t8_r0=0 (00)
+
+State 378 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 915 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=8 (1000)
+
+State 379 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 917 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[8l]=0 (00)
+
+State 384 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 923 function main thread 0
+----------------------------------------------------
+  __cs_param_req7_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 389 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 617 function req7_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 394 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 925 function main thread 0
+----------------------------------------------------
+  __cs_pc[8l]=0 (00)
+
+State 395 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 931 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t9_r0=0 (0)
+
+State 397 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 936 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=9 (1001)
+
+State 398 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 938 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[9l]=0 (00)
+
+State 403 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 944 function main thread 0
+----------------------------------------------------
+  __cs_param_req8_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 407 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 664 function req8_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 412 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 946 function main thread 0
+----------------------------------------------------
+  __cs_pc[9l]=0 (00)
+
+State 413 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 956 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r1=0 (00)
+
+State 443 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 977 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r1=2 (10)
+
+State 468 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 998 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t3_r1=0 (00)
+
+State 493 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1019 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t4_r1=0 (00)
+
+State 509 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1040 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t5_r1=0 (00)
+
+State 524 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1061 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t6_r1=2 (10)
+
+State 531 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1066 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=6 (0110)
+
+State 532 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1068 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[6l]=2 (10)
+
+State 537 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1074 function main thread 0
+----------------------------------------------------
+  __cs_param_req5_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 539 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 673 function req5_isr_0 thread 0
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 540 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 675 function req5_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp6_num=1 (00000000000000000000000000000001)
+
+State 541 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 676 function req5_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp6=0 (00000000000000000000000000000000)
+
+State 546 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 700 function req5_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 551 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1076 function main thread 0
+----------------------------------------------------
+  __cs_pc[6l]=2 (10)
+
+State 552 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1082 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t7_r1=2 (10)
+
+State 572 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1087 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=7 (0111)
+
+State 573 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1089 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[7l]=2 (10)
+
+State 578 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 1095 function main thread 0
+----------------------------------------------------
+  __cs_param_req6_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 581 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 215 function req6_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_req6_isr___cs_tmp_if_cond_3=FALSE (00000000)
+
+State 582 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 217 function req6_isr_0 thread 0
+----------------------------------------------------
+  wwr_r1=0 (00000000000000000000000000000000)
+
+Violated property:
+  file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 219 function req6_isr_0
+  assertion wwr_r1 == wwr_w_tmp7
+  wwr_r1 == wwr_w_tmp7
+
+
+Trace for req1_isr_0.assertion.1:
+
+State 86 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 764 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r0=2 (10)
+
+State 88 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 768 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (0001)
+
+State 89 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 770 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=2 (10)
+
+State 94 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 776 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 99 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 396 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[4l]=1 (1)
+
+State 100 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 399 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[7l]=1 (1)
+
+State 101 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 402 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[6l]=1 (1)
+
+State 102 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 405 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[5l]=1 (1)
+
+State 103 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 408 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[3l]=1 (1)
+
+State 104 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 411 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[9l]=1 (1)
+
+State 105 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 414 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[2l]=1 (1)
+
+State 106 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 417 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[8l]=1 (1)
+
+State 107 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 420 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[0l]=1 (1)
+
+State 111 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 427 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[4l]=0 (0)
+
+State 112 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 430 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[7l]=0 (0)
+
+State 113 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 433 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[6l]=0 (0)
+
+State 114 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 436 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[5l]=0 (0)
+
+State 115 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 439 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[3l]=0 (0)
+
+State 116 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 442 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[9l]=0 (0)
+
+State 117 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 445 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[2l]=0 (0)
+
+State 118 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 448 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[8l]=0 (0)
+
+State 119 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 451 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[0l]=0 (0)
+
+State 124 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 473 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 129 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 778 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=2 (10)
+
+State 130 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 784 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r0=1 (01)
+
+State 162 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 789 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (0010)
+
+State 163 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 791 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=1 (01)
+
+State 168 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 797 function main thread 0
+----------------------------------------------------
+  __cs_param_req1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 170 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 322 function req1_isr_0 thread 0
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 171 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 324 function req1_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp2_num=1 (00000000000000000000000000000001)
+
+State 172 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 325 function req1_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp2=0 (00000000000000000000000000000000)
+
+State 176 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 385 function req1_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 181 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 799 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=1 (01)
+
+State 182 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 805 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t3_r0=0 (00)
+
+State 188 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 826 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t4_r0=2 (10)
+
+State 210 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 831 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=4 (0100)
+
+State 211 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 833 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[4l]=2 (10)
+
+State 216 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 839 function main thread 0
+----------------------------------------------------
+  __cs_param_req3_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 218 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 709 function req3_isr_0 thread 0
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 219 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 711 function req3_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp4_num=1 (00000000000000000000000000000001)
+
+State 220 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 712 function req3_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp4=0 (00000000000000000000000000000000)
+
+State 222 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 729 function req3_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_req3_isr___cs_tmp_if_cond_2=FALSE (00000000)
+
+State 227 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 752 function req3_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 232 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 841 function main thread 0
+----------------------------------------------------
+  __cs_pc[4l]=2 (10)
+
+State 233 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 847 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t5_r0=2 (10)
+
+State 254 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 852 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=5 (0101)
+
+State 255 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 854 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[5l]=2 (10)
+
+State 260 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 860 function main thread 0
+----------------------------------------------------
+  __cs_param_req4_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 262 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 286 function req4_isr_0 thread 0
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 263 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 288 function req4_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp5_num=1 (00000000000000000000000000000001)
+
+State 264 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 289 function req4_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp5=0 (00000000000000000000000000000000)
+
+State 269 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 313 function req4_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 274 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 862 function main thread 0
+----------------------------------------------------
+  __cs_pc[5l]=2 (10)
+
+State 275 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 868 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t6_r0=0 (00)
+
+State 282 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 873 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=6 (0110)
+
+State 283 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 875 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[6l]=0 (00)
+
+State 288 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 881 function main thread 0
+----------------------------------------------------
+  __cs_param_req5_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 293 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 700 function req5_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 298 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 883 function main thread 0
+----------------------------------------------------
+  __cs_pc[6l]=0 (00)
+
+State 299 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 889 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t7_r0=2 (10)
+
+State 319 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 894 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=7 (0111)
+
+State 320 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 896 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[7l]=2 (10)
+
+State 325 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 902 function main thread 0
+----------------------------------------------------
+  __cs_param_req6_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 327 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 205 function req6_isr_0 thread 0
+----------------------------------------------------
+  irq=-1 (11111111111111111111111111111111)
+
+State 328 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 207 function req6_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp7_num=1 (00000000000000000000000000000001)
+
+State 329 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 208 function req6_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp7=-1 (11111111111111111111111111111111)
+
+State 331 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 215 function req6_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_req6_isr___cs_tmp_if_cond_3=TRUE (00000001)
+
+State 332 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 217 function req6_isr_0 thread 0
+----------------------------------------------------
+  wwr_r1=-1 (11111111111111111111111111111111)
+
+State 335 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 220 function req6_isr_0 thread 0
+----------------------------------------------------
+  wwr_w_tmp7_num=0 (00000000000000000000000000000000)
+
+State 340 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 241 function req6_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 345 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 904 function main thread 0
+----------------------------------------------------
+  __cs_pc[7l]=2 (10)
+
+State 346 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 910 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t8_r0=0 (00)
+
+State 348 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 915 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=8 (1000)
+
+State 349 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 917 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[8l]=0 (00)
+
+State 354 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 923 function main thread 0
+----------------------------------------------------
+  __cs_param_req7_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 359 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 617 function req7_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 364 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 925 function main thread 0
+----------------------------------------------------
+  __cs_pc[8l]=0 (00)
+
+State 365 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 931 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t9_r0=0 (0)
+
+State 367 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 936 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=9 (1001)
+
+State 368 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 938 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[9l]=0 (00)
+
+State 373 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 944 function main thread 0
+----------------------------------------------------
+  __cs_param_req8_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 377 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 664 function req8_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 382 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 946 function main thread 0
+----------------------------------------------------
+  __cs_pc[9l]=0 (00)
+
+State 383 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 956 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r1=0 (00)
+
+State 389 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 977 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r1=2 (10)
+
+State 418 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 982 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (0010)
+
+State 419 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 984 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=2 (10)
+
+State 424 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 990 function main thread 0
+----------------------------------------------------
+  __cs_param_req1_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 427 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 342 function req1_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_req1_isr___cs_tmp_if_cond_0=FALSE (00000000)
+
+State 428 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 344 function req1_isr_0 thread 0
+----------------------------------------------------
+  wwr_r2=-1 (11111111111111111111111111111111)
+
+Violated property:
+  file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/i2c_pca_isa_3/_mt_main_result/_cs_irq_wwr_mt_main.c line 346 function req1_isr_0
+  assertion wwr_r2 == wwr_w_tmp2
+  wwr_r2 == wwr_w_tmp2
+
+
+** 2 of 2 failed (2 iterations)
+VERIFICATION FAILED

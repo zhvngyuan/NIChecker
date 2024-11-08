@@ -1,0 +1,3 @@
+true violation int numberOfRecords rww
+true violation int intervalCounter rww
+true violation int tickCounter rww

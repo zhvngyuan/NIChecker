@@ -1,0 +1,33 @@
+CBMC version 5.6 64-bit x86_64 linux
+Parsing /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_029/_mt_svp_simple_029_001_result/_cs_svp_simple_029_001_tm_blocks[36]_rwr_mt_svp_simple_029_001.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking _cs_svp_simple_029_001_tm_blocks[36]_rwr_mt_svp_simple_029_001
+file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_029/_mt_svp_simple_029_001_result/_cs_svp_simple_029_001_tm_blocks[36]_rwr_mt_svp_simple_029_001.c line 528 function main_task_0: function `nondet_rand' is not declared
+file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_029/_mt_svp_simple_029_001_result/_cs_svp_simple_029_001_tm_blocks[36]_rwr_mt_svp_simple_029_001.c line 724 function main_task_0: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+**** WARNING: no body for function enable_isr
+size of program expression: 1147 steps
+simple slicing removed 120 assignments
+Generated 2 VCC(s), 2 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+422207 variables, 2330572 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 2.338s
+
+** Results:
+[main_task_0.assertion.1] assertion rwr_r1 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.2] assertion rwr_r2 == rwr_tmp1: SUCCESS
+
+** 0 of 2 failed (1 iteration)
+VERIFICATION SUCCESSFUL

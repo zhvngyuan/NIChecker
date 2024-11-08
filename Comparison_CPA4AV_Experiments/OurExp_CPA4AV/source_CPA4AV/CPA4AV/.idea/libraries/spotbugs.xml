@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="spotbugs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/slf4j-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/jaxen.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/commons-lang.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/jsr305.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/asm-analysis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/spotbugs-annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/asm-commons.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/asm-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/spotbugs-ant.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/jcip-annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/asm-tree.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/asm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/dom4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/spotbugs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/spotbugs/bcel.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

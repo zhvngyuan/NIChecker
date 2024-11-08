@@ -1,0 +1,3 @@
+int numberOfRecords rww
+int intervalCounter rww
+int tickCounter rww

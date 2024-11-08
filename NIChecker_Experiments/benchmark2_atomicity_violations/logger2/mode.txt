@@ -1,0 +1,2 @@
+int numberOfRecords rww
+int tickCounter wwr

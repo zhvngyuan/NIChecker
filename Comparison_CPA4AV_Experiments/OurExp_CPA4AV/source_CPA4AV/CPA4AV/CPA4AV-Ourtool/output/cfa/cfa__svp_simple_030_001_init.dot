@@ -1,0 +1,11 @@
+digraph svp_simple_030_001_init {
+14 [shape="circle" label="N14\n2"]
+15 [shape="circle" label="N15\n1"]
+10 [shape="circle" label="N10\n0"]
+11 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">11</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">12</td><td align="left">svp_simple_030_001_gloable_var = __VERIFER_nondet_int();</td></tr><tr><td align="right">13</td><td align="left">svp_simple_030_001_isr_1_flag = __VERIFER_nondet_int();</td></tr></table>>]
+11 -> 14[label=""]
+100003 [shape="component" label="init"]
+14 -> 100003 [label="init();" fontname="Courier New"]
+100003 -> 15 [label="" fontname="Courier New"]
+15 -> 10 [label="default return" fontname="Courier New"]
+}

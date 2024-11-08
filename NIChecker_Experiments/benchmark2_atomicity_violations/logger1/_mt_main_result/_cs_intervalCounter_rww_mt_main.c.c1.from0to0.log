@@ -1,0 +1,211 @@
+CBMC version 5.6 64-bit x86_64 linux
+Parsing /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking _cs_intervalCounter_rww_mt_main
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 187 function task_communicate_isr_0: function `nondet_rand' is not declared
+file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 337 function task_measure_isr_0: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+size of program expression: 503 steps
+simple slicing removed 137 assignments
+Generated 2 VCC(s), 1 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+605 variables, 954 clauses
+SAT checker: instance is SATISFIABLE
+Runtime decision procedure: 0.004s
+
+** Results:
+[task_measure_isr_0.assertion.1] assertion rww_w1 == rww_r_tmp2: FAILURE
+
+Trace for task_measure_isr_0.assertion.1:
+
+State 65 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 364 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r0=2 (10)
+
+State 67 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 368 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (001)
+
+State 68 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 370 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=2 (10)
+
+State 73 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 376 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 75 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 285 function main_task_0 thread 0
+----------------------------------------------------
+  systemState=0 (00000000000000000000000000000000)
+
+State 80 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 305 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 85 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 378 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=2 (10)
+
+State 86 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 384 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r0=1 (01)
+
+State 88 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 389 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (010)
+
+State 89 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 391 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=1 (01)
+
+State 94 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 397 function main thread 0
+----------------------------------------------------
+  __cs_param_task_measure_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 96 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 316 function task_measure_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_measure_isr_tmp_tickCounter=0 (00000000000000000000000000000000)
+
+State 97 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 319 function task_measure_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_measure_isr_tmp_interval=0 (00000000000000000000000000000000)
+
+State 98 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 322 function task_measure_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_measure_isr_value=1 (00000000000000000000000000000001)
+
+State 99 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 325 function task_measure_isr_0 thread 0
+----------------------------------------------------
+  __cs_temporary_0=0 (00000000000000000000000000000000)
+
+State 100 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 327 function task_measure_isr_0 thread 0
+----------------------------------------------------
+  __cs_temporary_0=1 (00000000000000000000000000000001)
+
+State 101 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 329 function task_measure_isr_0 thread 0
+----------------------------------------------------
+  rww_r_tmp2_num=1 (00000000000000000000000000000001)
+
+State 102 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 330 function task_measure_isr_0 thread 0
+----------------------------------------------------
+  rww_r_tmp2=0 (00000000000000000000000000000000)
+
+State 106 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 352 function task_measure_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 111 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 399 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=1 (01)
+
+State 112 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 405 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t3_r0=1 (1)
+
+State 114 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 410 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=3 (011)
+
+State 115 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 412 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[3l]=1 (01)
+
+State 120 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 418 function main thread 0
+----------------------------------------------------
+  __cs_param_task_communicate_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 122 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 182 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_communicate_isr__startTime=1 (00000000000000000000000000000001)
+
+State 123 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 185 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_communicate_isr__interval=1 (00000000000000000000000000000001)
+
+State 124 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 187 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  cmd=0 (00000000000000000000000000000000)
+
+State 125 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 189 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  rspStatus=1 (00000000000000000000000000000001)
+
+State 126 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 193 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_communicate_isr___cs_tmp_if_cond_0=TRUE (00000001)
+
+State 128 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 201 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_communicate_isr___cs_tmp_if_cond_1=FALSE (00000000)
+
+State 130 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 231 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_communicate_isr___cs_tmp_if_cond_3=TRUE (00000001)
+
+State 132 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 239 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_communicate_isr___cs_tmp_if_cond_4=FALSE (00000000)
+
+State 134 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 250 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  __cs_local_task_communicate_isr_tmp_num=1 (00000000000000000000000000000001)
+
+State 135 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 251 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  intervalCounter=1 (00000000000000000000000000000001)
+
+State 136 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 253 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  systemState=1 (00000000000000000000000000000001)
+
+State 140 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 276 function task_communicate_isr_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 145 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 420 function main thread 0
+----------------------------------------------------
+  __cs_pc[3l]=1 (01)
+
+State 146 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 430 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r1=3 (11)
+
+State 152 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 451 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r1=2 (10)
+
+State 154 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 456 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (010)
+
+State 155 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 458 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=2 (10)
+
+State 160 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 464 function main thread 0
+----------------------------------------------------
+  __cs_param_task_measure_isr_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 163 file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 335 function task_measure_isr_0 thread 0
+----------------------------------------------------
+  rww_w1=1 (00000000000000000000000000000001)
+
+Violated property:
+  file /home/dell/zyworkspace/nichecker/Experiment/Testrealpro/logger1/_mt_main_result/_cs_intervalCounter_rww_mt_main.c line 337 function task_measure_isr_0
+  assertion rww_w1 == rww_r_tmp2
+  rww_w1 == rww_r_tmp2
+
+
+** 1 of 1 failed (1 iteration)
+VERIFICATION FAILED

@@ -1,0 +1,27 @@
+2023-10-22 13:21:17
+SVPCheck: True	LoopAbstraction: True	LabelReduction: True	Slice: True	
+
+SVPCheck var: numberOfRecords	pattern: rww
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.228
+[91mUNSAFE[0m, counterexample: 2, time: 3.770 s, memory: 30.46 MB
+--------------------------Run end---------------------------------
+SVPCheck var: tickCounter	pattern: wwr
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.212
+[91mUNSAFE[0m, counterexample: 1, time: 3.625 s, memory: 29.99 MB
+--------------------------Run end---------------------------------
+cbmcTimeSum: 0.44
+modulesTimeSum: 7.395

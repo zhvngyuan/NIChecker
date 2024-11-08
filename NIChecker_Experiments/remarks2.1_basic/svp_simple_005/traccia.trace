@@ -1,0 +1,554 @@
+cseq.path: /home/dell/zyworkspace/nichecker-ubuntu/Cseq
+cseq.path: cseq.py
+cseq.path: 
+module.sys.path: ['/home/dell/zyworkspace/nichecker-ubuntu/Cseq', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/usr/local/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages']
+cseq.func_main:print current dir
+/home/dell/zyworkspace/nichecker-ubuntu/Cseq
+--------------------------Check-------------------------------
+2023-09-11 22:02:36
+cseq.func_check:0
+require Python: 2.7
+--------------------------Init-------------------------------
+cseq.func_init:print cmdline
+['cseq.py', '--output', '/home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_cs__mt_svp_simple_005_001.c', '-i', '/home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c', '--cex', '--unwind', '2', '--rounds', '2']
+use loopAbs:True use slice:False use labelReduc:False
+lazyseq.sys.path: ['/home/dell/zyworkspace/nichecker-ubuntu/Cseq', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/usr/local/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages', '/home/dell/zyworkspace/nichecker-ubuntu']
+feeder.global_def:start
+feeder.class_feeder:start
+modules.feeder
+feed.func_init:start
+cseq.func_init:print cseqenv.opts
+[('--output', '/home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_cs__mt_svp_simple_005_001.c'), ('-i', '/home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c'), ('--cex', ''), ('--unwind', '2'), ('--rounds', '2')]
+cseq.func_init:print cseqenv.args
+[]
+cseq.func_init:print inputfile
+/home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c
+--------------------------Run-------------------------------
+Merging
+/home/dell/zyworkspace/nichecker-ubuntu/Cseq/core
+ -I/home/dell/zyworkspace/nichecker-ubuntu/Cseq/core\include
+ -I/home/dell/zyworkspace/nichecker-ubuntu/Cseq/core\include -I/home/dell/zyworkspace/Experiment/remarks/svp_simple_005
+gcc -D'__attribute__(x)=' -D'__extension__(x)=' -D'__volatile__=' -nostdinc  -I/home/dell/zyworkspace/nichecker-ubuntu/Cseq/core\include -I/home/dell/zyworkspace/Experiment/remarks/svp_simple_005 -E - 
+core.merge.func_loadfromstring:print p
+core.merge.func_loadfromstring:print input
+core.merge.func_loadfromstring:print new string
+core.merge.func_loadfromstring:print output
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 1
+cseq.func_run:print cseqenv.modulecomment
+{0: 'Program simplification', 4: 'Loop and control-flow transformation', 11: 'Program flattening', 15: 'Sequentialization', 19: 'Instrumentation', 20: 'Analysis'}
+------------------------- workarounds -----------------------
+Program simplification
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.044
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 2
+------------------------- functiontracker -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.016
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 3
+------------------------- preinstrumenter -----------------------
+cseq.func_run:print input
+core.module.func_initparams:add param to env.paramvalues
+param: error-label value: ERROR
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.014
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 4
+------------------------- spinlock -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.012
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 5
+------------------------- preinliner -----------------------
+Loop and control-flow transformation
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.012
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 6
+------------------------- inliner -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.012
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 7
+------------------------- slice -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.026
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 8
+------------------------- switchtransformer -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.013
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 9
+------------------------- dowhileconverter -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.013
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 10
+------------------------- LoopAbstraction -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.015
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 11
+------------------------- conditionextractor -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.024
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 12
+------------------------- varnames -----------------------
+Program flattening
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.026
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 13
+------------------------- unroller -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.034
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 14
+------------------------- selfop -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.044
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 15
+------------------------- constants -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.058
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 16
+------------------------- duplicator -----------------------
+Sequentialization
+cseq.func_run:print input
+core.module.func_initparams:add param to env.paramvalues
+param: threads value: 0
+duplicator.func_loadfromstring:start
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+duplicator.func_loadfromstring:after set threads
+module run time: 0.056
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 17
+------------------------- condwaitconverter -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.051
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 18
+------------------------- insertLabel -----------------------
+cseq.func_run:print input
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+module run time: 0.092
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 19
+------------------------- lazyseq -----------------------
+cseq.func_run:print input
+False
+lazyseq.func_loadfromstring:print schedule
+None
+lazyseq.func_loadfromstring:print new schedule
+None
+lazyseq.func_loadfromstring:print __explicitround
+[]
+lazyseq.func_loadfromstring:print new __explicitround
+['+', '+']
+lazyseq.loadfromstring:before super loadfromstring
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+lazyseq.func_visti_FuncDef:start---------------------main_task_0
+---> blubluuu: main_task_0   callcnt:0   idcnt:1   thrcnt:1
+lazyseq.func_visit_FuncDef:print __lines 
+{'main_task_0': 11}
+lazyseq.func_visti_FuncDef:start---------------------svp_simple_005_001_isr_1_0
+---> blubluuu: svp_simple_005_001_isr_1_0   callcnt:0   idcnt:1   thrcnt:1
+lazyseq.func_visit_FuncDef:print __lines 
+{'svp_simple_005_001_isr_1_0': 1, 'main_task_0': 11}
+lazyseq.func_visti_FuncDef:start---------------------idlerun
+---> blubluuu: idlerun   callcnt:0   idcnt:0   thrcnt:0
+lazyseq.func_visti_FuncDef:start---------------------init
+---> blubluuu: init   callcnt:0   idcnt:0   thrcnt:0
+lazyseq.func_visti_FuncDef:start---------------------main
+---> blubluuu: main   callcnt:0   idcnt:0   thrcnt:0
+lazyseq.func_visit_FuncDef:print __lines 
+{'main': 2, 'svp_simple_005_001_isr_1_0': 1, 'main_task_0': 11}
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+lazyseq.loadfromstring:after super loadfromstring
+lazyseq.func_scheduler:print threadInformation
+main
+{'kind': 'random', 'prio': 0, 'thread': 'main', 'constraint': 0, 't': 0, 'event': ''}
+svp_simple_005_001_isr_1_0
+{'kind': 'random', 'prio': 1, 'thread': 'svp_simple_005_001_isr_1', 'constraint': 0, 't': 0, 'csRandom': 0, 'event': ''}
+main_task_0
+{'kind': 'random', 'prio': 0, 'thread': 'main', 'constraint': 0, 't': 0, 'event': ''}
+module run time: 0.056
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 20
+------------------------- instrumenter -----------------------
+Instrumentation
+cseq.func_run:print input
+core.module.func_initparams:add param to env.paramvalues
+param: backend value: CBMC
+c_generator.func_loadfromstring:print dic
+{'globalVariable': 'svp_simple_005_001_global_var', 'type': 'int', 'mode': 'wrw', 'isMt': False}
+{'svp_simple_005_001_isr_1_0': <modules.instrumenter.randomThreadInfo instance at 0x7fb9a278e820>, 'main_task_0': <modules.instrumenter.randomThreadInfo instance at 0x7fb9a278eaa0>}
+father class core.module.func_loadfromstring:start
+core.parser.func_loadfromstring:call ext_c_parser
+core.parser.func_loadfromstring:call ext_c_parser end
+c_generator.func_visit_FuncDef:visit main_task_0
+---------------------------------------------------------
+c_generator.func_visit_FuncDef:get in main_task_0
+c_generator.func_visit_FuncDef:visit svp_simple_005_001_isr_1_0
+---------------------------------------------------------
+c_generator.func_visit_FuncDef:get in main_thread
+C_generator.func_mainThreadBody
+0
+C_generator.func_mainThreadBody:find Thread init
+__cs_local_main_t0
+C_generator.func_mainThreadBody:find Thread init
+__cs_local_main_t1
+C_generator.func_mainThreadBody:find Thread create
+__cs_local_main_t0
+C_generator.func_mainThreadBody:find Thread create
+__cs_local_main_t1
+module.func_loadfromstring:经visit_()生成的output
+module.func_loadfromstring:去掉#标记的 output
+insertheader.func_loadfromstring:add __cs_random __cs_pc_before
+300
+module run time: 0.125
+cseq.func_run:print output
+cseq.func_run:print outputtoinput 21
+------------------------- replacegoto -----------------------
+Analysis
+cseq.func_run:print input
+{'__exit_loop_4': 'first', '__exit_loop_3': 'tmain_task_0_6', '__exit_loop_2': 'tmain_task_0_3', '__exit_loop_1': 'tmain_task_0_7'}
+module run time: 0.004
+------------------------- mapper -----------------------
+cseq.func_run:print input
+core.module.func_initparams:add param to env.paramvalues
+param: cores value: 1
+0
+1
+cbmc
+module run time: 0.000
+------------------------- feeder -----------------------
+cseq.func_run:print input
+core.module.func_initparams:add param to env.paramvalues
+param: time value: 86400
+core.module.func_initparams:add param to env.paramvalues
+param: depth value: 0
+core.module.func_initparams:add param to env.paramvalues
+param: slevel value: 0
+core.module.func_initparams:add param to env.paramvalues
+param: extrargs value: []
+feeder.func_loadfromstring:start
+feeder.func_loadfromstring:print env.opts
+[('--output', '/home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_cs__mt_svp_simple_005_001.c'), ('-i', '/home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c'), ('--cex', ''), ('--unwind', '2'), ('--rounds', '2')]
+feeder.func_loadfromstring:print paramString
+
+feeder.func_loadfromstring:print backend
+cbmc
+feeder.func_loadfromstring:print testcmd
+backends/cbmc-5.6 --version
+feeder.func_loadfromstring:print installed_backendversion
+backendversion: 5.6
+now path is: /home/dell/zyworkspace/nichecker-ubuntu/Cseq
+feeder.func_loadfromstring:print cmd for cbmc
+ backends/cbmc-5.6  --trace --gcc  /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_cs__mt_svp_simple_005_001.c  2>&1
+args: 
+feeder.func_feed:print out
+module run time: 1.533
+------------------------- cex -----------------------
+cseq.func_run:print input
+cex.func_loadfromstring:print loopheads
+[30, 31, 31, 52, 52]
+cex.func_translateCPROVERcex:print cbmc_counterexample find()
+  find Trace for: 2232
+  find Counterexample: -1
+cex.func_translateCPROVERcex:read cbmc_counterexample from line 37
+module run time: 0.006
+
+** Results:
+[main_task_0.assertion.1] assertion wrw_a_1 == 0: SUCCESS
+[main_task_0.assertion.2] assertion wrw_a_1 == 0: SUCCESS
+[main_task_0.assertion.3] assertion wrw_a_1 == 0: SUCCESS
+[main_task_0.assertion.4] assertion wrw_a_1 == 0: SUCCESS
+[main_task_0.assertion.5] assertion wrw_a_1 == 0: SUCCESS
+[main_task_0.assertion.6] assertion wrw_a_1 == 0: FAILURE
+
+Trace for main_task_0.assertion.6:
+
+State 65
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  thread 0 (main) scheduled
+
+State 95 file ? line ? thread 0
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  pthread_create(thread 1)
+
+State 102 thread 0
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  thread spawned
+
+State 113 file ? line ? thread 0
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  pthread_create(thread 2)
+
+State 120 thread 0
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  thread spawned
+
+State 136
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  thread 1 (main_task) scheduled
+
+State 149 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 30 function main_task thread 1
+----------------------------------------------------
+  i=0
+
+State 150 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 30 function main_task thread 1
+----------------------------------------------------
+  t=0
+
+State 153 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 31 function main_task thread 1
+----------------------------------------------------
+  loop_1_block_2=9999
+
+State 154 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 31 function main_task thread 1
+----------------------------------------------------
+  i=9999
+
+State 157 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 31 function main_task thread 1
+----------------------------------------------------
+  j=0
+
+State 158 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 31 function main_task thread 1
+----------------------------------------------------
+  t=0
+
+State 160 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 32 function main_task thread 1
+----------------------------------------------------
+  loop_2_IOVar1=0
+
+State 161 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 32 function main_task thread 1
+----------------------------------------------------
+  loop_2_block_2=1000
+
+State 162 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 32 function main_task thread 1
+----------------------------------------------------
+  j=1000
+
+State 165 file ? line ? thread 1
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  branch TRUE
+
+State 168 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 33 function main_task thread 1
+----------------------------------------------------
+  svp_simple_005_001_global_var=1
+
+State 170 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 31 function main_task thread 1
+----------------------------------------------------
+  wrw_a_1_num=1
+
+State 171 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 31 function main_task thread 1
+----------------------------------------------------
+  wrw_a_1=0
+
+State 173 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 31 function main_task thread 1
+----------------------------------------------------
+  j=1001
+
+State 176 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 32 function main_task thread 1
+----------------------------------------------------
+  loop_2_IOVar1=1001
+
+State 177 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 32 function main_task thread 1
+----------------------------------------------------
+  loop_2_block_2=8998
+
+State 178 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 32 function main_task thread 1
+----------------------------------------------------
+  j=9999
+
+State 181 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 32 thread 1
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  branch FALSE
+
+State 184 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 31 function main_task thread 1
+----------------------------------------------------
+  j=10000
+
+State 185 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 31 function main_task thread 1
+----------------------------------------------------
+  t=2
+
+State 206
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  thread 2 (svp_simple_005_001_isr_1) scheduled
+
+State 216 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 52 function idlerun thread 2
+----------------------------------------------------
+  t=0
+
+State 218 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 52 function idlerun thread 2
+----------------------------------------------------
+  loop_3_IOVar1=0
+
+State 219 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 52 function idlerun thread 2
+----------------------------------------------------
+  loop_3_block_1=100
+
+State 220 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 52 function idlerun thread 2
+----------------------------------------------------
+  i=100
+
+State 224 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 52 function idlerun thread 2
+----------------------------------------------------
+  t=1
+
+State 229 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 64 function main thread 2
+----------------------------------------------------
+  reader=1
+
+State 230 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 64 function main thread 2
+----------------------------------------------------
+  wrw_a_1=1
+
+State 239 file  line 47 thread 2
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  pthread_exit(thread 2)
+
+State 243
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  thread 0 (main) scheduled
+
+State 262
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  thread 1 (main_task) scheduled
+
+State 276 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 30 function main_task thread 1
+----------------------------------------------------
+  i=10000
+
+State 290 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 39 thread 1
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  branch FALSE
+
+State 305
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  thread 2 (svp_simple_005_001_isr_1) scheduled
+
+State 324
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+  thread 1 (main_task) scheduled
+
+State 342 file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 44 function svp_simple_005_001_isr_1 thread 1
+----------------------------------------------------
+  svp_simple_005_001_global_var=5
+
+Violated property:
+  file /home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c line 51
+  assertion wrw_a_1 == 0
+  wrw_a_1 == 0
+
+
+
+/home/dell/zyworkspace/Experiment/remarks/svp_simple_005/_mt_svp_simple_005_001.c, [91mUNSAFE[0m, 2.308, 0.00MB
+cbmc run time: 1.533

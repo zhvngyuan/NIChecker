@@ -1,0 +1,2 @@
+1784 variables  4094 clauses
+1784 variables  473 clauses

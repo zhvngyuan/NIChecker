@@ -1,0 +1,14 @@
+digraph svp_simple_022_001_init {
+16 [shape="circle" label="N16\n6"]
+17 [shape="circle" label="N17\n5"]
+20 [shape="circle" label="N20\n2"]
+21 [shape="circle" label="N21\n1"]
+15 [shape="circle" label="N15\n0"]
+17 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">17</td><td align="left">svp_simple_022_001_global_var1 = rand();</td></tr><tr><td align="right">18</td><td align="left">svp_simple_022_001_global_var2 = rand();</td></tr><tr><td align="right">19</td><td align="left">svp_simple_022_001_global_var3 = rand();</td></tr></table>>]
+17 -> 20[label=""]
+16 -> 17 [label="Function start dummy edge" fontname="Courier New"]
+100006 [shape="component" label="init"]
+20 -> 100006 [label="init();" fontname="Courier New"]
+100006 -> 21 [label="" fontname="Courier New"]
+21 -> 15 [label="default return" fontname="Courier New"]
+}

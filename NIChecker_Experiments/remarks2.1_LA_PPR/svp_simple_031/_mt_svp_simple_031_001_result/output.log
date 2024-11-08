@@ -1,0 +1,16 @@
+2024-06-03 20:38:30
+SVPCheck: True	LoopAbstraction: True	LabelReduction: True	Slice: False	
+
+SVPCheck var: svp_simple_031_001_tc_block_rcvd_bytes_ch1	pattern: rwr
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.274
+[91mUNSAFE[0m, counterexample: 3, time: 3.217 s, memory: 32.41 MB
+--------------------------Run end---------------------------------
+cbmcTimeSum: 0.274
+modulesTimeSum: 3.217

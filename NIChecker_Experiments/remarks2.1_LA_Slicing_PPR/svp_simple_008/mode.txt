@@ -1,0 +1,1 @@
+int svp_simple_008_001_global_array[40] wwr

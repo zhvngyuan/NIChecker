@@ -1,0 +1,38 @@
+2024-06-03 21:55:40
+SVPCheck: True	LoopAbstraction: True	LabelReduction: False	Slice: True	
+
+SVPCheck var: svp_simple_022_001_global_var1	pattern: wwr
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.212
+[91mUNSAFE[0m, counterexample: 2, time: 2.890 s, memory: 29.75 MB
+--------------------------Run end---------------------------------
+SVPCheck var: svp_simple_022_001_global_var1	pattern: rwr
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.211
+[91mUNSAFE[0m, counterexample: 1, time: 2.648 s, memory: 29.98 MB
+--------------------------Run end---------------------------------
+SVPCheck var: svp_simple_022_001_global_var1	pattern: rww
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.203
+[91mUNSAFE[0m, counterexample: 1, time: 2.659 s, memory: 30.02 MB
+--------------------------Run end---------------------------------
+cbmcTimeSum: 0.626
+modulesTimeSum: 8.197

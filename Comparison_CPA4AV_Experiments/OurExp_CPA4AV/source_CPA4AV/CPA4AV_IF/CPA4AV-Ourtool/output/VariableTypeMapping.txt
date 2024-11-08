@@ -1,0 +1,13 @@
+idlerun::i	4
+svp_simple_003_001_main::reader4	6
+svp_simple_003_001_main::j__1	4
+svp_simple_003_001_main::reader3	6
+svp_simple_003_001_main::reader2	6
+svp_simple_003_001_global_flag	6
+svp_simple_003_001_main::reader1	6
+svp_simple_003_001_main::i__1	4
+svp_simple_003_001_global_var1	6
+svp_simple_003_001_global_var2	6
+svp_simple_003_001_main::j	4
+svp_simple_003_001_main::i	4
+svp_simple_003_001_global_flag1	6

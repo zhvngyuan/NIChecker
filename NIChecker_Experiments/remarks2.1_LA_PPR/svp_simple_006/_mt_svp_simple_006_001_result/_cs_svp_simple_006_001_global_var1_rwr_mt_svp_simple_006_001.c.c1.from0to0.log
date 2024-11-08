@@ -1,0 +1,719 @@
+CBMC version 5.6 64-bit x86_64 linux
+Parsing /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking _cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001
+file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 281 function main_task_0: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+size of program expression: 5135 steps
+simple slicing removed 517 assignments
+Generated 33 VCC(s), 24 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+36638 variables, 146585 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+36638 variables, 64336 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+36638 variables, 64324 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 0.469s
+
+** Results:
+[main_task_0.assertion.1] assertion rwr_r1 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.2] assertion rwr_r2 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.3] assertion rwr_r3 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.4] assertion rwr_r4 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.5] assertion rwr_r5 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.6] assertion rwr_r6 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.7] assertion rwr_r7 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.8] assertion rwr_r8 == rwr_tmp1: FAILURE
+[main_task_0.assertion.9] assertion rwr_r9 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.10] assertion rwr_r10 == rwr_tmp1: SUCCESS
+[main_task_0.assertion.11] assertion rwr_r11 == rwr_tmp1: FAILURE
+[main_task_0.assertion.12] assertion rwr_r12 == rwr_tmp1: SUCCESS
+
+Trace for main_task_0.assertion.8:
+
+State 109 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1511 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r0=7 (00111)
+
+State 111 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1515 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (01)
+
+State 112 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1517 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=7 (00111)
+
+State 117 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1523 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 119 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 170 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_reader3=0 (00000000000000000000000000000000)
+
+State 120 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 176 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_i=0 (00000000000000000000000000000000)
+
+State 121 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 184 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_1=0 (00000000000000000000000000000000)
+
+State 123 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 202 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_1_IOVar1=0 (00000000000000000000000000000000)
+
+State 124 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 205 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_1_block_2=0 (00000000000000000000000000000000)
+
+State 125 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 208 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_i=0 (00000000000000000000000000000000)
+
+State 128 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 219 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=0 (00000000000000000000000000000000)
+
+State 129 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 227 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_2=0 (00000000000000000000000000000000)
+
+State 131 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 245 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_IOVar1=0 (00000000000000000000000000000000)
+
+State 132 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 248 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_block_4=0 (00000000000000000000000000000000)
+
+State 133 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 251 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=0 (00000000000000000000000000000000)
+
+State 136 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 261 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_0=TRUE (00000001)
+
+State 138 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 270 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_1=TRUE (00000001)
+
+State 140 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 277 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_reader1=0 (00000000000000000000000000000000)
+
+State 141 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 279 function main_task_0 thread 0
+----------------------------------------------------
+  rwr_r1=0 (00000000000000000000000000000000)
+
+State 143 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 283 function main_task_0 thread 0
+----------------------------------------------------
+  rwr_tmp1_num=1 (00000000000000000000000000000001)
+
+State 144 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 284 function main_task_0 thread 0
+----------------------------------------------------
+  rwr_tmp1=0 (00000000000000000000000000000000)
+
+State 149 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 367 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=1 (00000000000000000000000000000001)
+
+State 150 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 373 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_2=1 (00000000000000000000000000000001)
+
+State 152 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 391 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_IOVar1=1 (00000000000000000000000000000001)
+
+State 153 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 394 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_block_4=3 (00000000000000000000000000000011)
+
+State 154 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 397 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=4 (00000000000000000000000000000100)
+
+State 157 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 407 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_0=FALSE (00000000)
+
+State 160 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 513 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=5 (00000000000000000000000000000101)
+
+State 161 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 519 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_2=2 (00000000000000000000000000000010)
+
+State 162 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 523 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_loop_2=FALSE (00000000)
+
+State 181 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1374 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 186 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1525 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=7 (00111)
+
+State 187 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1531 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r0=1 (1)
+
+State 189 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1536 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (10)
+
+State 190 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1538 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=1 (00001)
+
+State 195 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1544 function main thread 0
+----------------------------------------------------
+  __cs_param_svp_simple_006_001_isr_1_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 197 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1389 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_i=0 (00000000000000000000000000000000)
+
+State 198 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1391 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_i=0 (00000000000000000000000000000000)
+
+State 199 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1398 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_t_5=0 (00000000000000000000000000000000)
+
+State 201 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1413 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_loop_5_IOVar1=0 (00000000000000000000000000000000)
+
+State 202 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1415 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_loop_5_block_1=100 (00000000000000000000000001100100)
+
+State 203 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1417 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_i=100 (00000000000000000000000001100100)
+
+State 206 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1428 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_i=101 (00000000000000000000000001100101)
+
+State 207 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1433 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_t_5=1 (00000000000000000000000000000001)
+
+State 212 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1486 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  svp_simple_006_001_global_var1=1 (00000000000000000000000000000001)
+
+State 213 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1488 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_reader2=0 (00000000000000000000000000000000)
+
+State 217 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1499 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 222 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1546 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=1 (00001)
+
+State 223 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1556 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r1=7 (00111)
+
+State 225 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1561 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (01)
+
+State 226 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1563 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=7 (00111)
+
+State 231 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1569 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 257 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1374 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 262 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1571 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=7 (00111)
+
+State 263 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1577 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r1=1 (1)
+
+State 265 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1582 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (10)
+
+State 266 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1584 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=1 (00001)
+
+State 271 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1590 function main thread 0
+----------------------------------------------------
+  __cs_param_svp_simple_006_001_isr_1_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 275 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1499 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 280 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1592 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=1 (00001)
+
+State 281 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1596 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r2=15u (00000000000000000000000000001111)
+
+State 283 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1601 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (01)
+
+State 284 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1603 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=15 (01111)
+
+State 289 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1609 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 301 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 545 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_i=1 (00000000000000000000000000000001)
+
+State 302 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 551 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_1=1 (00000000000000000000000000000001)
+
+State 304 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 569 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_1_IOVar1=1 (00000000000000000000000000000001)
+
+State 305 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 572 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_1_block_2=3 (00000000000000000000000000000011)
+
+State 306 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 575 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_i=4 (00000000000000000000000000000100)
+
+State 309 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 586 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=0 (00000000000000000000000000000000)
+
+State 310 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 594 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_2=0 (00000000000000000000000000000000)
+
+State 312 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 612 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_IOVar1=0 (00000000000000000000000000000000)
+
+State 313 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 615 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_block_4=4 (00000000000000000000000000000100)
+
+State 314 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 618 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=4 (00000000000000000000000000000100)
+
+State 317 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 628 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_0=TRUE (00000001)
+
+State 319 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 637 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_1=FALSE (00000000)
+
+State 322 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 664 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_2=TRUE (00000001)
+
+State 324 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 671 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_reader2=1 (00000000000000000000000000000001)
+
+State 325 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 673 function main_task_0 thread 0
+----------------------------------------------------
+  rwr_r8=1 (00000000000000000000000000000001)
+
+Violated property:
+  file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 675 function main_task_0
+  assertion rwr_r8 == rwr_tmp1
+  rwr_r8 == rwr_tmp1
+
+
+Trace for main_task_0.assertion.11:
+
+State 109 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1511 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r0=7 (00111)
+
+State 111 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1515 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (01)
+
+State 112 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1517 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=7 (00111)
+
+State 117 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1523 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 119 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 170 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_reader3=0 (00000000000000000000000000000000)
+
+State 120 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 176 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_i=0 (00000000000000000000000000000000)
+
+State 121 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 184 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_1=0 (00000000000000000000000000000000)
+
+State 123 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 202 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_1_IOVar1=0 (00000000000000000000000000000000)
+
+State 124 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 205 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_1_block_2=0 (00000000000000000000000000000000)
+
+State 125 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 208 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_i=0 (00000000000000000000000000000000)
+
+State 128 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 219 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=0 (00000000000000000000000000000000)
+
+State 129 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 227 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_2=0 (00000000000000000000000000000000)
+
+State 131 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 245 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_IOVar1=0 (00000000000000000000000000000000)
+
+State 132 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 248 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_block_4=0 (00000000000000000000000000000000)
+
+State 133 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 251 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=0 (00000000000000000000000000000000)
+
+State 136 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 261 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_0=TRUE (00000001)
+
+State 138 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 270 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_1=TRUE (00000001)
+
+State 140 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 277 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_reader1=0 (00000000000000000000000000000000)
+
+State 141 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 279 function main_task_0 thread 0
+----------------------------------------------------
+  rwr_r1=0 (00000000000000000000000000000000)
+
+State 143 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 283 function main_task_0 thread 0
+----------------------------------------------------
+  rwr_tmp1_num=1 (00000000000000000000000000000001)
+
+State 144 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 284 function main_task_0 thread 0
+----------------------------------------------------
+  rwr_tmp1=0 (00000000000000000000000000000000)
+
+State 149 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 367 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=1 (00000000000000000000000000000001)
+
+State 150 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 373 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_2=1 (00000000000000000000000000000001)
+
+State 152 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 391 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_IOVar1=1 (00000000000000000000000000000001)
+
+State 153 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 394 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_block_4=3 (00000000000000000000000000000011)
+
+State 154 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 397 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=4 (00000000000000000000000000000100)
+
+State 157 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 407 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_0=FALSE (00000000)
+
+State 160 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 513 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=5 (00000000000000000000000000000101)
+
+State 161 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 519 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_2=2 (00000000000000000000000000000010)
+
+State 162 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 523 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_loop_2=FALSE (00000000)
+
+State 181 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1374 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 186 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1525 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=7 (00111)
+
+State 187 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1531 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r0=1 (1)
+
+State 189 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1536 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (10)
+
+State 190 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1538 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=1 (00001)
+
+State 195 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1544 function main thread 0
+----------------------------------------------------
+  __cs_param_svp_simple_006_001_isr_1_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 197 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1389 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_i=0 (00000000000000000000000000000000)
+
+State 198 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1391 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_i=0 (00000000000000000000000000000000)
+
+State 199 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1398 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_t_5=0 (00000000000000000000000000000000)
+
+State 201 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1413 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_loop_5_IOVar1=0 (00000000000000000000000000000000)
+
+State 202 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1415 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_loop_5_block_1=100 (00000000000000000000000001100100)
+
+State 203 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1417 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_i=100 (00000000000000000000000001100100)
+
+State 206 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1428 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_i=101 (00000000000000000000000001100101)
+
+State 207 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1433 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_t_5=1 (00000000000000000000000000000001)
+
+State 212 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1486 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  svp_simple_006_001_global_var1=1 (00000000000000000000000000000001)
+
+State 213 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1488 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_006_001_isr_1_reader2=0 (00000000000000000000000000000000)
+
+State 217 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1499 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 222 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1546 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=1 (00001)
+
+State 223 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1556 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r1=7 (00111)
+
+State 225 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1561 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (01)
+
+State 226 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1563 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=7 (00111)
+
+State 231 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1569 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 257 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1374 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 262 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1571 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=7 (00111)
+
+State 263 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1577 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r1=1 (1)
+
+State 265 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1582 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (10)
+
+State 266 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1584 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=1 (00001)
+
+State 271 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1590 function main thread 0
+----------------------------------------------------
+  __cs_param_svp_simple_006_001_isr_1_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 275 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1499 function svp_simple_006_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 280 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1592 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=1 (00001)
+
+State 281 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1596 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r2=15u (00000000000000000000000000001111)
+
+State 283 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1601 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (01)
+
+State 284 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1603 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=15 (01111)
+
+State 289 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 1609 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 301 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 545 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_i=1 (00000000000000000000000000000001)
+
+State 302 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 551 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_1=1 (00000000000000000000000000000001)
+
+State 304 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 569 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_1_IOVar1=1 (00000000000000000000000000000001)
+
+State 305 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 572 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_1_block_2=3 (00000000000000000000000000000011)
+
+State 306 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 575 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_i=4 (00000000000000000000000000000100)
+
+State 309 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 586 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=0 (00000000000000000000000000000000)
+
+State 310 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 594 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_2=0 (00000000000000000000000000000000)
+
+State 312 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 612 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_IOVar1=0 (00000000000000000000000000000000)
+
+State 313 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 615 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_block_4=0 (00000000000000000000000000000000)
+
+State 314 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 618 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=0 (00000000000000000000000000000000)
+
+State 317 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 628 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_0=FALSE (00000000)
+
+State 320 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 734 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=1 (00000000000000000000000000000001)
+
+State 321 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 740 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_t_2=1 (00000000000000000000000000000001)
+
+State 323 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 758 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_IOVar1=1 (00000000000000000000000000000001)
+
+State 324 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 761 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_loop_2_block_4=3 (00000000000000000000000000000011)
+
+State 325 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 764 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_j=4 (00000000000000000000000000000100)
+
+State 328 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 774 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_0=TRUE (00000001)
+
+State 330 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 783 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_1=FALSE (00000000)
+
+State 333 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 810 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task___cs_tmp_if_cond_2=TRUE (00000001)
+
+State 335 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 817 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_reader2=1 (00000000000000000000000000000001)
+
+State 336 file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 819 function main_task_0 thread 0
+----------------------------------------------------
+  rwr_r11=1 (00000000000000000000000000000001)
+
+Violated property:
+  file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_LA_PPR/svp_simple_006/_mt_svp_simple_006_001_result/_cs_svp_simple_006_001_global_var1_rwr_mt_svp_simple_006_001.c line 821 function main_task_0
+  assertion rwr_r11 == rwr_tmp1
+  rwr_r11 == rwr_tmp1
+
+
+** 2 of 12 failed (3 iterations)
+VERIFICATION FAILED

@@ -1,0 +1,176 @@
+CBMC version 5.10 (cbmc-5.10) 64-bit x86_64 linux
+Parsing _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c
+Converting
+Type-checking _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001
+file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 250 function main_task_0: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 138 function pthread_exit: replacing function pointer by 0 possible targets
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+**** WARNING: no body for function enable_isr
+size of program expression: 419 steps
+simple slicing removed 23 assignments
+Generated 7 VCC(s), 6 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+1308 variables, 2235 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+1308 variables, 251 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 0.00781461s
+
+** Results:
+[main_task_0.assertion.1] assertion wrw_a___cs_local_main_task_svp_simple_009_001_local_var1_1 == 0: SUCCESS
+[main_task_0.assertion.2] assertion wrw_a_svp_simple_009_001_p_1 == 0: SUCCESS
+[main_task_0.assertion.3] assertion wrw_a___cs_local_main_task_svp_simple_009_001_local_var1_1 == 0: FAILURE
+
+Trace for main_task_0.assertion.3:
+
+State 46 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 308 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r0=2 (010)
+
+State 48 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 312 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (01)
+
+State 49 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 314 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=2 (010)
+
+State 54 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 320 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 59 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 232 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[2l]=0 (0)
+
+State 60 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 235 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_disable_thread[0l]=0 (0)
+
+State 62 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 247 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_variable_address_list[0l]=&__cs_local_main_task_svp_simple_009_001_local_var1 (00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 63 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 248 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_svp_simple_009_001_local_var1=1 (00000000 00000000 00000000 00000001)
+
+State 65 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 252 function main_task_0 thread 0
+----------------------------------------------------
+  wrw_a___cs_local_main_task_svp_simple_009_001_local_var1_1_num=1 (00000000 00000000 00000000 00000001)
+
+State 66 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 253 function main_task_0 thread 0
+----------------------------------------------------
+  wrw_a___cs_local_main_task_svp_simple_009_001_local_var1_1=0 (00000000 00000000 00000000 00000000)
+
+State 67 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 257 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_svp_simple_009_001_local_var2=9 (00000000 00000000 00000000 00001001)
+
+State 68 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 259 function main_task_0 thread 0
+----------------------------------------------------
+  svp_simple_009_001_p=&__cs_local_main_task_svp_simple_009_001_local_var1 (00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 70 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 264 function main_task_0 thread 0
+----------------------------------------------------
+  wrw_a_svp_simple_009_001_p_1_num=1 (00000000 00000000 00000000 00000001)
+
+State 71 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 265 function main_task_0 thread 0
+----------------------------------------------------
+  wrw_a_svp_simple_009_001_p_1=0 (00000000 00000000 00000000 00000000)
+
+State 76 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 296 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 81 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 322 function main thread 0
+----------------------------------------------------
+  __cs_pc[1l]=2 (010)
+
+State 82 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 328 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t2_r0=1 (1)
+
+State 84 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 333 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=2 (10)
+
+State 85 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 335 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[2l]=1 (001)
+
+State 90 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 341 function main thread 0
+----------------------------------------------------
+  __cs_param_svp_simple_009_001_isr_1_arg=NULL (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 92 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 187 function svp_simple_009_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_009_001_isr_1_reader2=0 (00000000 00000000 00000000 00000000)
+
+State 93 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 192 function svp_simple_009_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_009_001_isr_1_i=0 (00000000 00000000 00000000 00000000)
+
+State 94 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 197 function svp_simple_009_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_009_001_isr_1_reader1=1 (00000000 00000000 00000000 00000001)
+
+State 96 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 200 function svp_simple_009_001_isr_1_0 thread 0
+----------------------------------------------------
+  wrw_a___cs_local_main_task_svp_simple_009_001_local_var1_1=1 (00000000 00000000 00000000 00000001)
+
+State 97 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 205 function svp_simple_009_001_isr_1_0 thread 0
+----------------------------------------------------
+  wrw_a_svp_simple_009_001_p_1=1 (00000000 00000000 00000000 00000001)
+
+State 98 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 209 function svp_simple_009_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_local_svp_simple_009_001_isr_1_svp_simple_009_001_local_var3=8 (00000000 00000000 00000000 00001000)
+
+State 101 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 220 function svp_simple_009_001_isr_1_0 thread 0
+----------------------------------------------------
+  __cs_value_ptr=NULL (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 106 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 343 function main thread 0
+----------------------------------------------------
+  __cs_pc[2l]=1 (001)
+
+State 107 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 353 function main thread 0
+----------------------------------------------------
+  __cs_tmp_t1_r1=3 (011)
+
+State 109 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 358 function main thread 0
+----------------------------------------------------
+  __cs_thread_index=1 (01)
+
+State 110 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 360 function main thread 0
+----------------------------------------------------
+  __cs_pc_cs[1l]=3 (011)
+
+State 115 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 366 function main thread 0
+----------------------------------------------------
+  __cs_param_main_task_arg=NULL (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 119 file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 271 function main_task_0 thread 0
+----------------------------------------------------
+  __cs_local_main_task_svp_simple_009_001_local_var1=2 (00000000 00000000 00000000 00000010)
+
+Violated property:
+  file _cs_svp_simple_009_001_p_wrw_mt_svp_simple_009_001.c line 275 function main_task_0
+  assertion wrw_a___cs_local_main_task_svp_simple_009_001_local_var1_1 == 0
+  wrw_a___cs_local_main_task_svp_simple_009_001_local_var1_1 == 0
+
+
+
+** 1 of 3 failed (2 iterations)
+VERIFICATION FAILED

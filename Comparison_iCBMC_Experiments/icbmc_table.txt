@@ -1,0 +1,27 @@
+### 2023年 10月 25日 星期三 15:40:44 CST
+\specialrule{0.03em}{2pt}{2pt}
+\multirow{2}{*}{\textbf{Name}} & \multirow{2}{*}{\textbf{LOC}} &\multirow{2}{*}{\textbf{ISR}} &\multirow{2}{*}{\textbf{Assertions}}  &\multirow{2}{*}{\#\textbf{VA}} &\multicolumn{3}{c|}{\textbf{iCBMC}} &\multicolumn{6}{|c|}{\textbf{NIChecker}}\\
+\cmidrule{l}{5-14}
+ &  & & & &\#\textbf{Vio} &\#\textbf{TP} &\textbf{Time}(s) &\textbf{u} &\textbf{r} &\#\textbf{WN} &\#\textbf{TP} &\textbf{BackendTime}(s) &\textbf{Time}(s)\\
+\midrule
+logger1&172&2&1&1&1&1&\cellcolor{gray!20}0.62&2 &2&1&1&\cellcolor{blue!20}0.2&1.821 \\
+logger2&196&3&0&0&0&0&\cellcolor{gray!20}0.345&2 &2&0&0&\cellcolor{blue!20}0.216&1.857 \\
+logger3&212&4&2&2&2&2&\cellcolor{gray!20}1.057&2 &2&2&2&\cellcolor{blue!20}0.321&1.998 \\
+blink1&177&3&2&2&2&2&\cellcolor{gray!20}0.864&2 &2&2&2&\cellcolor{blue!20}0.21&1.699 \\
+blink2&190&4&2&2&2&2&\cellcolor{gray!20}1.261&2 &2&2&2&\cellcolor{blue!20}0.224&1.754 \\
+blink3&211&5&3&3&3&3&\cellcolor{gray!20}1.724&2 &2&3&3&\cellcolor{blue!20}0.263&1.842 \\
+brake1&834&2&4&4&4&4&\cellcolor{gray!20}2.325&2 &2&4&4&\cellcolor{blue!20}0.221&2.591 \\
+brake2&839&3&3&3&3&3&\cellcolor{gray!20}5.596&2 &2&3&3&\cellcolor{blue!20}0.293&2.384 \\
+brake3&853&4&4&4&4&4&\cellcolor{gray!20}34.713&2 &2&4&4&\cellcolor{blue!20}0.393&2.538 \\
+i2c\_pca\_isa\_1&341&4&0&0&0&0&\cellcolor{gray!20}0.361&2 &2&0&0&\cellcolor{blue!20}0.255&1.82 \\
+i2c\_pca\_isa\_2&368&6&8&8&8&8&\cellcolor{gray!20}1.524&2 &2&8&8&\cellcolor{blue!20}0.359&2.107 \\
+i2c\_pca\_isa\_3&399&8&12&12&12&12&\cellcolor{gray!20}288.583&2 &2&12&12&\cellcolor{blue!20}0.522&2.415 \\
+i8xx\_tco\_1&787&3&1&1&1&1&\cellcolor{gray!20}0.526&2 &2&1&1&\cellcolor{blue!20}0.213&1.981 \\
+i8xx\_tco\_2&964&4&0&0&0&0&\cellcolor{gray!20}0.502&2 &2&0&0&\cellcolor{blue!20}0.255&3.446 \\
+i8xx\_tco\_3&982&6&1&1&1&1&\cellcolor{gray!20}3.531&2 &2&1&1&\cellcolor{blue!20}0.359&3.651 \\
+wdt\_pci\_1&1286&4&1&1&1&1&\cellcolor{gray!20}1.373&2 &2&1&1&\cellcolor{blue!20}0.248&2.937 \\
+wdt\_pci\_2&1328&6&1&1&1&1&\cellcolor{gray!20}4.862&2 &2&1&1&\cellcolor{blue!20}0.262&3.034 \\
+wdt\_pci\_3&1385&8&3&3&3&3&\cellcolor{gray!20}66.831&2 &2&3&3&\cellcolor{blue!20}0.568&3.486 \\
+\midrule
+\textbf{Total} & 11524 & 79 & 48 & 48 & 48 & 48 & 0 & & & 48 & 0 & \cellcolor{blue!20}43.361 & 0\\
+\specialrule{0.03em}{2pt}{2pt}

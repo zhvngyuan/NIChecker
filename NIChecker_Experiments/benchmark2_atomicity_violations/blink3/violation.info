@@ -1,0 +1,6 @@
+true violation timerCount(93R,123/136W,93W)
+true violation timerCount(136R,123W,136W)
+true violation timerCount(95W,123W,97R)
+true violation timerCount(109W,123W,111R)
+
+false violation timerCount(93R,146W,93W)

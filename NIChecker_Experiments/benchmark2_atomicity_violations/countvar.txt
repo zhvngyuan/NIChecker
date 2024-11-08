@@ -1,0 +1,106 @@
+6375 variables  21605 clauses
+6368 variables  21624 clauses
+6368 variables  7243 clauses
+5412 variables  18305 clauses
+2617 variables  6745 clauses
+2617 variables  670 clauses
+3496 variables  9800 clauses
+3496 variables  1180 clauses
+2623 variables  6758 clauses
+2623 variables  691 clauses
+6165 variables  18596 clauses
+6150 variables  18556 clauses
+6150 variables  4045 clauses
+9283 variables  30451 clauses
+4299 variables  11621 clauses
+4299 variables  1064 clauses
+4299 variables  1056 clauses
+4299 variables  1055 clauses
+4296 variables  11626 clauses
+4296 variables  1053 clauses
+4296 variables  0 clauses
+4778 variables  12875 clauses
+4344 variables  11771 clauses
+6389 variables  18999 clauses
+6389 variables  2285 clauses
+6418 variables  19137 clauses
+6418 variables  2317 clauses
+6367 variables  18979 clauses
+6367 variables  2170 clauses
+9107 variables  26922 clauses
+9087 variables  26842 clauses
+9087 variables  2405 clauses
+8590 variables  25218 clauses
+8590 variables  1978 clauses
+10523 variables  29354 clauses
+10491 variables  29234 clauses
+10491 variables  4539 clauses
+17844 variables  56057 clauses
+17844 variables  9701 clauses
+19825 variables  63986 clauses
+3438 variables  8626 clauses
+3428 variables  8604 clauses
+3428 variables  664 clauses
+Binary file (standard input) matches
+756119 variables  2405559 clauses
+805510 variables  2588326 clauses
+ * Format string modifiers for using size_t variables in printf statements.  *
+  /* local block i/o variables */
+  /* local block i/o variables */
+  //global variables are initialized to 0 by default
+  //global variables are initialized to 0 by default
+  /* local block i/o variables */
+  /* local block i/o variables */
+  //global variables are initialized to 0 by default
+  //global variables are initialized to 0 by default
+ * Format string modifiers for using size_t variables in printf statements.  *
+Binary file (standard input) matches
+2512 variables  6099 clauses
+2512 variables  539 clauses
+2485 variables  6010 clauses
+3449 variables  8850 clauses
+2532 variables  6169 clauses
+4103 variables  12704 clauses
+4069 variables  12594 clauses
+4069 variables  3811 clauses
+4105 variables  12655 clauses
+6789 variables  22542 clauses
+9677 variables  30172 clauses
+9677 variables  2699 clauses
+8652 variables  26075 clauses
+8652 variables  2449 clauses
+10514 variables  33548 clauses
+10514 variables  0 clauses
+9663 variables  30125 clauses
+9663 variables  2715 clauses
+2544 variables  6444 clauses
+2506 variables  6314 clauses
+2506 variables  780 clauses
+3139 variables  8426 clauses
+3139 variables  1063 clauses
+5442 variables  16219 clauses
+5406 variables  16103 clauses
+5406 variables  3911 clauses
+9023 variables  28774 clauses
+2629 variables  7431 clauses
+2629 variables  7431 clauses
+4670 variables  13757 clauses
+4670 variables  1823 clauses
+4659 variables  13731 clauses
+4659 variables  1932 clauses
+3770 variables  10846 clauses
+3770 variables  1614 clauses
+2291 variables  5839 clauses
+3545 variables  9989 clauses
+3545 variables  2293 clauses
+2291 variables  5839 clauses
+3545 variables  9989 clauses
+3545 variables  2293 clauses
+869 variables  1921 clauses
+869 variables  207 clauses
+869 variables  1921 clauses
+869 variables  207 clauses
+818 variables  1742 clauses
+862 variables  1892 clauses
+818 variables  1742 clauses
+862 variables  1892 clauses

@@ -1,0 +1,1 @@
+int svp_simple_024_001_global_array[1] rwr

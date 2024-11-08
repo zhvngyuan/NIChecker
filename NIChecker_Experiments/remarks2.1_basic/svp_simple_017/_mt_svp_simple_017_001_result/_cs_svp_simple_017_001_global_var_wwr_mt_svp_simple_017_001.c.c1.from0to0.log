@@ -1,0 +1,37 @@
+CBMC version 5.6 64-bit x86_64 linux
+Parsing /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_basic/svp_simple_017/_mt_svp_simple_017_001_result/_cs_svp_simple_017_001_global_var_wwr_mt_svp_simple_017_001.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking _cs_svp_simple_017_001_global_var_wwr_mt_svp_simple_017_001
+file /home/dell/zyworkspace/nichecker/Experiment/remarks2.1_basic/svp_simple_017/_mt_svp_simple_017_001_result/_cs_svp_simple_017_001_global_var_wwr_mt_svp_simple_017_001.c line 223 function main_task_0: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+**** WARNING: no body for function enable_isr
+size of program expression: 788 steps
+simple slicing removed 23 assignments
+Generated 21 VCC(s), 18 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+4398 variables, 12901 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 0.023s
+
+** Results:
+[main_task_0.assertion.1] assertion wwr_r1 == wwr_w_tmp1: SUCCESS
+[main_task_0.assertion.2] assertion wwr_r1 == wwr_w_tmp1: SUCCESS
+[main_task_0.assertion.3] assertion wwr_r1 == wwr_w_tmp1: SUCCESS
+[main_task_0.assertion.4] assertion wwr_r2 == wwr_w_tmp1: SUCCESS
+[main_task_0.assertion.5] assertion wwr_r2 == wwr_w_tmp1: SUCCESS
+[main_task_0.assertion.6] assertion wwr_r2 == wwr_w_tmp1: SUCCESS
+[main_task_0.assertion.7] assertion wwr_r3 == wwr_w_tmp1: SUCCESS
+
+** 0 of 7 failed (1 iteration)
+VERIFICATION SUCCESSFUL

@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="checkstyle">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/failureaccess.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/jcip-annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/commons-beanutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/checker-qual.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/Saxon-HE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/commons-collections.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/antlr4-runtime.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/picocli.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/jsr305.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/guava.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/listenablefuture.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/error_prone_annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/antlr.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/reflections.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/sevntu-checks.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/j2objc-annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/checkstyle.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CPA4AV-Ourtool/lib/java/checkstyle/javassist.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

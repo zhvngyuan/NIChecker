@@ -1,0 +1,349 @@
+CBMC version 4.9 64-bit linux
+Parsing main.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Converting
+Type-checking main
+Generating GOTO Program
+Adding CPROVER library
+Function Pointer Removal
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Adding interrupt constraints
+size of program expression: 358627 steps
+no slicing due to threads
+Generated 42 VCC(s), 42 remaining after simplification
+Passing problem to propositional reduction
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.0 with simplifier
+490755 variables, 2604277 clauses
+SAT checker: negated claim is SATISFIABLE, i.e., does not hold
+Runtime decision procedure: 57.728s
+Building error trace
+
+Counterexample:
+
+State 3 file <built-in-additions> line 30 thread 0
+----------------------------------------------------
+  __CPROVER_deallocated=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 4 file <built-in-additions> line 31 thread 0
+----------------------------------------------------
+  __CPROVER_dead_object=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 5 file <built-in-additions> line 32 thread 0
+----------------------------------------------------
+  __CPROVER_malloc_object=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 6 file <built-in-additions> line 33 thread 0
+----------------------------------------------------
+  __CPROVER_malloc_size=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 7 file <built-in-additions> line 34 thread 0
+----------------------------------------------------
+  __CPROVER_malloc_is_new_array=FALSE (0)
+
+State 8 file <built-in-additions> line 35 thread 0
+----------------------------------------------------
+  __CPROVER_memory_leak=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 9 file main.c line 186 thread 0
+----------------------------------------------------
+  global_clock=0 (00000000000000000000000000000000)
+
+State 10 file main.c line 187 thread 0
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 11 file main.c line 188 thread 0
+----------------------------------------------------
+  global_id=0 (00000000000000000000000000000000)
+
+State 12 file main.c line 189 thread 0
+----------------------------------------------------
+  global_dev=0 (00000000000000000000000000000000)
+
+State 13 file main.c line 271 thread 0
+----------------------------------------------------
+  cnt1=0 (00000000000000000000000000000000)
+
+State 14 file main.c line 271 thread 0
+----------------------------------------------------
+  cnt2=0 (00000000000000000000000000000000)
+
+State 15 file main.c line 271 thread 0
+----------------------------------------------------
+  cnt3=0 (00000000000000000000000000000000)
+
+State 16 file main.c line 271 thread 0
+----------------------------------------------------
+  cnt4=0 (00000000000000000000000000000000)
+
+State 17 file main.c line 271 thread 0
+----------------------------------------------------
+  cnt5=0 (00000000000000000000000000000000)
+
+State 18 file main.c line 271 thread 0
+----------------------------------------------------
+  cnt6=0 (00000000000000000000000000000000)
+
+State 19 file main.c line 271 thread 0
+----------------------------------------------------
+  cnt7=0 (00000000000000000000000000000000)
+
+State 20 file main.c line 271 thread 0
+----------------------------------------------------
+  cnt8=0 (00000000000000000000000000000000)
+
+State 21 file <built-in-additions> line 57 thread 0
+----------------------------------------------------
+  __CPROVER_rounding_mode=0 (00000000000000000000000000000000)
+
+State 22 file <built-in-additions> line 78 thread 0
+----------------------------------------------------
+  __CPROVER_pipe_count=0 (00000000000000000000000000000000)
+
+State 23 file <built-in-additions> line 21 thread 0
+----------------------------------------------------
+  __CPROVER_thread_id=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 24 file <built-in-additions> line 22 thread 0
+----------------------------------------------------
+  __CPROVER_threads_exited=__CPROVER_threads_exited#1 (?)
+
+State 25 file <built-in-additions> line 23 thread 0
+----------------------------------------------------
+  __CPROVER_next_thread_id=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 39 file main.c line 306 function req2 thread 2
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 40 file main.c line 354 function req6 thread 5
+----------------------------------------------------
+  irq=-1 (11111111111111111111111111111111)
+
+State 41 file main.c line 342 function req5 thread 13
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 42 file main.c line 343 function req5 thread 13
+----------------------------------------------------
+  global_id=5 (00000000000000000000000000000101)
+
+State 43 file main.c line 343 function req5 thread 13
+----------------------------------------------------
+  global_dev=5 (00000000000000000000000000000101)
+
+State 47 file main.c line 345 function req5 thread 13
+----------------------------------------------------
+  global_id=-1 (11111111111111111111111111111111)
+
+State 48 file main.c line 345 function req5 thread 13
+----------------------------------------------------
+  global_dev=-1 (11111111111111111111111111111111)
+
+State 49 file main.c line 346 function req5 thread 13
+----------------------------------------------------
+  cnt5=1 (00000000000000000000000000000001)
+
+State 54 file main.c line 342 function req5 thread 12
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 55 file main.c line 343 function req5 thread 12
+----------------------------------------------------
+  global_id=5 (00000000000000000000000000000101)
+
+State 56 file main.c line 343 function req5 thread 12
+----------------------------------------------------
+  global_dev=5 (00000000000000000000000000000101)
+
+State 60 file main.c line 345 function req5 thread 12
+----------------------------------------------------
+  global_id=-1 (11111111111111111111111111111111)
+
+State 61 file main.c line 373 function req8 thread 23
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 62 file main.c line 345 function req5 thread 12
+----------------------------------------------------
+  global_dev=-1 (11111111111111111111111111111111)
+
+State 63 file main.c line 374 function req8 thread 23
+----------------------------------------------------
+  global_id=8 (00000000000000000000000000001000)
+
+State 64 file main.c line 374 function req8 thread 23
+----------------------------------------------------
+  global_dev=8 (00000000000000000000000000001000)
+
+State 68 file main.c line 376 function req8 thread 23
+----------------------------------------------------
+  global_id=-1 (11111111111111111111111111111111)
+
+State 69 file main.c line 376 function req8 thread 23
+----------------------------------------------------
+  global_dev=-1 (11111111111111111111111111111111)
+
+State 70 file main.c line 346 function req5 thread 12
+----------------------------------------------------
+  cnt5=2 (00000000000000000000000000000010)
+
+State 75 file main.c line 377 function req8 thread 23
+----------------------------------------------------
+  cnt8=1 (00000000000000000000000000000001)
+
+State 79 file main.c line 355 function req6 thread 5
+----------------------------------------------------
+  cnt6=1 (00000000000000000000000000000001)
+
+State 84 file main.c line 342 function req5 thread 11
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 85 file main.c line 343 function req5 thread 11
+----------------------------------------------------
+  global_id=5 (00000000000000000000000000000101)
+
+State 86 file main.c line 343 function req5 thread 11
+----------------------------------------------------
+  global_dev=5 (00000000000000000000000000000101)
+
+State 90 file main.c line 345 function req5 thread 11
+----------------------------------------------------
+  global_id=-1 (11111111111111111111111111111111)
+
+State 91 file main.c line 345 function req5 thread 11
+----------------------------------------------------
+  global_dev=-1 (11111111111111111111111111111111)
+
+State 92 file main.c line 346 function req5 thread 11
+----------------------------------------------------
+  cnt5=3 (00000000000000000000000000000011)
+
+State 97 file main.c line 330 function req4 thread 4
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 98 file main.c line 331 function req4 thread 4
+----------------------------------------------------
+  global_id=4 (00000000000000000000000000000100)
+
+State 99 file main.c line 331 function req4 thread 4
+----------------------------------------------------
+  global_dev=4 (00000000000000000000000000000100)
+
+State 100 file main.c line 333 function req4 thread 4
+----------------------------------------------------
+  global_id=-1 (11111111111111111111111111111111)
+
+State 101 file main.c line 333 function req4 thread 4
+----------------------------------------------------
+  global_dev=-1 (11111111111111111111111111111111)
+
+State 102 file main.c line 334 function req4 thread 4
+----------------------------------------------------
+  cnt4=1 (00000000000000000000000000000001)
+
+State 107 file main.c line 307 function req2 thread 2
+----------------------------------------------------
+  global_id=2 (00000000000000000000000000000010)
+
+State 108 file main.c line 318 function req3 thread 3
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 109 file main.c line 342 function req5 thread 14
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 110 file main.c line 343 function req5 thread 14
+----------------------------------------------------
+  global_id=5 (00000000000000000000000000000101)
+
+State 111 file main.c line 343 function req5 thread 14
+----------------------------------------------------
+  global_dev=5 (00000000000000000000000000000101)
+
+State 115 file main.c line 345 function req5 thread 14
+----------------------------------------------------
+  global_id=-1 (11111111111111111111111111111111)
+
+State 116 file main.c line 345 function req5 thread 14
+----------------------------------------------------
+  global_dev=-1 (11111111111111111111111111111111)
+
+State 117 file main.c line 346 function req5 thread 14
+----------------------------------------------------
+  cnt5=4 (00000000000000000000000000000100)
+
+State 122 file main.c line 342 function req5 thread 10
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 123 file main.c line 343 function req5 thread 10
+----------------------------------------------------
+  global_id=5 (00000000000000000000000000000101)
+
+State 124 file main.c line 343 function req5 thread 10
+----------------------------------------------------
+  global_dev=5 (00000000000000000000000000000101)
+
+State 127 file main.c line 363 function req7 thread 18
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 129 file main.c line 345 function req5 thread 10
+----------------------------------------------------
+  global_id=-1 (11111111111111111111111111111111)
+
+State 130 file main.c line 345 function req5 thread 10
+----------------------------------------------------
+  global_dev=-1 (11111111111111111111111111111111)
+
+State 131 file main.c line 346 function req5 thread 10
+----------------------------------------------------
+  cnt5=5 (00000000000000000000000000000101)
+
+State 136 file main.c line 319 function req3 thread 3
+----------------------------------------------------
+  global_id=3 (00000000000000000000000000000011)
+
+State 137 file main.c line 364 function req7 thread 18
+----------------------------------------------------
+  global_id=7 (00000000000000000000000000000111)
+
+State 138 file main.c line 364 function req7 thread 18
+----------------------------------------------------
+  global_dev=7 (00000000000000000000000000000111)
+
+State 142 file main.c line 366 function req7 thread 18
+----------------------------------------------------
+  global_id=-1 (11111111111111111111111111111111)
+
+State 143 file main.c line 366 function req7 thread 18
+----------------------------------------------------
+  global_dev=-1 (11111111111111111111111111111111)
+
+State 144 file main.c line 367 function req7 thread 18
+----------------------------------------------------
+  cnt7=1 (00000000000000000000000000000001)
+
+State 149 file main.c line 319 function req3 thread 3
+----------------------------------------------------
+  global_dev=3 (00000000000000000000000000000011)
+
+Violated property:
+  file main.c line 320 function req3
+  assertion 0
+  FALSE
+
+VERIFICATION FAILED
+
+real	1m3.591s
+user	1m3.071s
+sys	0m0.510s

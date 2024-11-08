@@ -1,0 +1,27 @@
+2024-09-27 09:09:28
+SVPCheck: True	 SchedulingSeqReduction: False	LoopAbstraction: False	LabelReduction: False	Slice: False	
+
+SVPCheck var: svp_simple_013_001_global_var1	pattern: rwr
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.231
+[92mSAFE[0m, counterexample: 0, time: 1.883 s, memory: 30.82 MB
+--------------------------Run end---------------------------------
+SVPCheck var: svp_simple_013_001_global_var2	pattern: rwr
+--------------------------Run start-------------------------------
+inliner
+slice
+LoopAbstraction
+unroller
+insertLabel
+lazyseq
+feeder  0.232
+[92mSAFE[0m, counterexample: 0, time: 2.068 s, memory: 30.84 MB
+--------------------------Run end---------------------------------
+cbmcTimeSum: 0
+modulesTimeSum: 0

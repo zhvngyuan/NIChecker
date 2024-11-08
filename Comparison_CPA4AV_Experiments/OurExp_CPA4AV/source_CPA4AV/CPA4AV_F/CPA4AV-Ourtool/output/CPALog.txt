@@ -1,0 +1,41 @@
+2023-08-28 17:46:13:788	INFO	CPAMain.detectFrontendLanguageIfNecessary	Language C detected and set for analysis
+
+2023-08-28 17:46:13:802	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 300s
+
+2023-08-28 17:46:13:859	INFO	CPAchecker.run	CPAchecker 2.0 / myAnalysis-concurrent-interrupt-benchmark-racebench (OpenJDK 64-Bit Server VM 11.0.15) started
+
+2023-08-28 17:46:13:875	INFO	CPAchecker.parse	Parsing CFA from file(s) "../Racebench-2.1+/Racebench-2.1+/svp_simple_028_001.c"
+
+2023-08-28 17:46:14:308	WARNING	CheckBindingVisitor.visit	Undefined function __VERIFER_nondet_int found, first called in line 37
+
+2023-08-28 17:46:14:399	INFO	EdgeInfo.<init>	Building Constrained Dependency Graph ...
+
+2023-08-28 17:46:14:560	WARNING	FormulaManagerView.<init>	Using unsound approximation of ints with unbounded integers and floats with rationals for encoding program semantics.
+
+2023-08-28 17:46:14:770	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ cpa.threadingintp.maxInterruptLevel
+ cpa.por.pcdpor.depComputationStateType
+ cpa.locations.useIncClonedFunc
+ heap 
+
+
+2023-08-28 17:46:14:771	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2023-08-28 17:46:14:847	WARNING	ThreadingIntpCPA:ThreadingIntpTransferRelation.createInterruptThreads	current state reaches the maximum interrupt nesting level 2
+
+2023-08-28 17:46:14:848	WARNING	ThreadingIntpCPA:ThreadingIntpTransferRelation.createInterruptThreads	current state reaches the maximum interrupt nesting level 2
+
+2023-08-28 17:46:14:850	WARNING	ThreadingIntpCPA:ThreadingIntpTransferRelation.createInterruptThreads	current state reaches the maximum interrupt nesting level 2
+
+2023-08-28 17:46:14:852	WARNING	ThreadingIntpCPA:ThreadingIntpTransferRelation.createInterruptThreads	current state reaches the maximum interrupt nesting level 2
+
+2023-08-28 17:46:14:904	WARNING	ThreadingIntpCPA:ThreadingIntpTransferRelation.createInterruptThreads	current state reaches the maximum interrupt nesting level 2
+
+2023-08-28 17:46:14:905	WARNING	ThreadingIntpCPA:ThreadingIntpTransferRelation.createInterruptThreads	current state reaches the maximum interrupt nesting level 2
+
+2023-08-28 17:46:14:907	WARNING	ThreadingIntpCPA:ThreadingIntpTransferRelation.createInterruptThreads	current state reaches the maximum interrupt nesting level 2
+
+2023-08-28 17:46:14:909	WARNING	ThreadingIntpCPA:ThreadingIntpTransferRelation.createInterruptThreads	current state reaches the maximum interrupt nesting level 2
+
+2023-08-28 17:46:14:922	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

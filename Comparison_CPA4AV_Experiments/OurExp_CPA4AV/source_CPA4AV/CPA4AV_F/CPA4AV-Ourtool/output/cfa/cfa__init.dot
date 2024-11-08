@@ -1,0 +1,7 @@
+digraph init {
+37 [shape="circle" label="N37\n3"]
+38 [shape="circle" label="N38\n2"]
+38 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">38</td><td align="left">enable_isr(-1);</td></tr><tr><td align="right">39</td><td align="left">default return</td></tr></table>>]
+38 -> 36[label=""]
+37 -> 38 [label="Function start dummy edge" fontname="Courier New"]
+}

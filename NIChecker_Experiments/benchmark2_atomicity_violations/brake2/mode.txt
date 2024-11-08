@@ -1,0 +1,4 @@
+int test_global_var1 wwr
+int test_global_var1 rwr
+int test_global_var2 wrw
+
